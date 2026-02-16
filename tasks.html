@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title data-i18n="tasks_title">番茄钟 - 任务管理</title>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <link rel="stylesheet" href="themes.css">
+  <link rel="stylesheet" href="tasks.css">
+  <script src="i18n.js"></script>
+</head>
+<body>
+  <div class="tasks-container">
+    <div class="tasks-header">
+      <div class="header-left">
+        <span class="material-icons">checklist</span>
+        <h1 data-i18n="tasks_title">任务管理</h1>
+      </div>
+      <button class="btn-primary" id="addTaskBtn">
+        <span class="material-icons">add</span>
+        <span data-i18n="btn_add_task">新建任务</span>
+      </button>
+    </div>
+
+    <!-- Filter Bar -->
+    <div class="filter-bar">
+      <div class="filter-group">
+        <label class="filter-label" data-i18n="filter_category">分类</label>
+        <select id="categoryFilter" class="filter-select">
+          <option value="all" data-i18n="filter_all">全部</option>
+          <option value="work" data-i18n="cat_work">工作</option>
+          <option value="study" data-i18n="cat_study">学习</option>
+          <option value="reading" data-i18n="cat_reading">阅读</option>
+          <option value="coding" data-i18n="cat_coding">编程</option>
+          <option value="writing" data-i18n="cat_writing">写作</option>
+          <option value="meeting" data-i18n="cat_meeting">会议</option>
+          <option value="exercise" data-i18n="cat_exercise">运动</option>
+          <option value="other" data-i18n="cat_other">其他</option>
+        </select>
+      </div>
+      <div class="filter-group">
+        <label class="filter-label" data-i18n="filter_status">状态</label>
+        <select id="statusFilter" class="filter-select">
+          <option value="all" data-i18n="filter_all">全部</option>
+          <option value="pending" data-i18n="filter_pending">待完成</option>
+          <option value="completed" data-i18n="filter_completed">已完成</option>
+        </select>
+      </div>
+    </div>
+
+    <!-- Pinned Tasks -->
+    <section id="pinnedTasks" class="task-section">
+      <div class="section-title">
+        <span class="material-icons">push_pin</span>
+        <span data-i18n="section_pinned_tasks">置顶任务</span>
+      </div>
+      <div id="pinnedTasksList" class="task-list"></div>
+    </section>
+
+    <!-- Regular Tasks -->
+    <section id="regularTasks" class="task-section">
+      <div class="section-title">
+        <span class="material-icons">list</span>
+        <span data-i18n="section_task_list">任务列表</span>
+      </div>
+      <div id="taskList" class="task-list"></div>
+    </section>
+
+    <!-- Empty State -->
+    <div id="emptyState" class="empty-state" style="display: none;">
+      <span class="material-icons">assignment</span>
+      <h3 data-i18n="empty_tasks_title">暂无任务</h3>
+      <p data-i18n="empty_tasks_desc">点击"新建任务"开始添加您的第一个任务</p>
+    </div>
+  </div>
+
+  <!-- Task Modal -->
+  <div id="taskModal" class="modal">
+    <div class="modal-overlay" id="modalOverlay"></div>
+    <div class="modal-content">
+      <div class="modal-header">
+        <h2 id="modalTitle" data-i18n="modal_new_task">新建任务</h2>
+        <button class="icon-btn" id="closeModalBtn">
+          <span class="material-icons">close</span>
+        </button>
+      </div>
+      <form id="taskForm" class="task-form">
+        <input type="hidden" id="taskId">
+
+        <div class="form-group">
+          <label for="taskTitle"><span data-i18n="label_task_name">任务名称</span> <span class="required" data-i18n="label_required">*</span></label>
+          <input type="text" id="taskTitle" required data-i18n-placeholder="placeholder_task_name" maxlength="100">
+        </div>
+
+        <div class="form-group">
+          <label for="taskDescription" data-i18n="label_task_description">任务描述</label>
+          <textarea id="taskDescription" data-i18n-placeholder="placeholder_task_description" rows="3" maxlength="500"></textarea>
+        </div>
+
+        <div class="form-row">
+          <div class="form-group">
+            <label for="taskCategory" data-i18n="label_category">分类</label>
+            <select id="taskCategory">
+              <option value="work" data-i18n="cat_work">工作</option>
+              <option value="study" data-i18n="cat_study">学习</option>
+              <option value="reading" data-i18n="cat_reading">阅读</option>
+              <option value="coding" data-i18n="cat_coding">编程</option>
+              <option value="writing" data-i18n="cat_writing">写作</option>
+              <option value="meeting" data-i18n="cat_meeting">会议</option>
+              <option value="exercise" data-i18n="cat_exercise">运动</option>
+              <option value="other" data-i18n="cat_other">其他</option>
+            </select>
+          </div>
+          <div class="form-group">
+            <label for="taskPriority" data-i18n="label_priority">优先级</label>
+            <select id="taskPriority">
+              <option value="low" data-i18n="priority_low">低</option>
+              <option value="medium" selected data-i18n="priority_medium">中</option>
+              <option value="high" data-i18n="priority_high">高</option>
+            </select>
+          </div>
+        </div>
+
+        <div class="form-group">
+          <label for="taskEstimated" data-i18n="label_estimated_time">预估时间（分钟）</label>
+          <input type="number" id="taskEstimated" min="5" max="480" step="5" data-i18n-placeholder="placeholder_estimated_time">
+        </div>
+
+        <div class="form-actions">
+          <button type="button" class="btn-secondary" id="cancelBtn" data-i18n="btn_cancel">取消</button>
+          <button type="submit" class="btn-primary" data-i18n="btn_save">保存</button>
+        </div>
+      </form>
+    </div>
+  </div>
+
+  <script src="tasks.js"></script>
+</body>
+</html>

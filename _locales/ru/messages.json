@@ -1,0 +1,704 @@
+{
+  "ext_name": {
+    "message": "Таймер Помодоро",
+    "description": "Extension name"
+  },
+  "ext_description": {
+    "message": "Таймер помодоро для концентрации, поддержка циклов работа/отдых, статистика и напоминания",
+    "description": "Extension description"
+  },
+  "cmd_start_pause": {
+    "message": "Запустить или приостановить таймер",
+    "description": "Keyboard shortcut description for start/pause"
+  },
+  "cmd_reset": {
+    "message": "Сбросить таймер",
+    "description": "Keyboard shortcut description for reset"
+  },
+
+  "app_title": {
+    "message": "Помодоро",
+    "description": "Main app title"
+  },
+  "btn_settings": {
+    "message": "Настройки",
+    "description": "Settings button title"
+  },
+
+  "phase_focus": {
+    "message": "Фокус",
+    "description": "Focus phase label"
+  },
+  "phase_short_break": {
+    "message": "Короткий перерыв",
+    "description": "Short break phase label"
+  },
+  "phase_long_break": {
+    "message": "Длинный перерыв",
+    "description": "Long break phase label"
+  },
+
+  "status_focus": {
+    "message": "В фокусе...",
+    "description": "Focus status text"
+  },
+  "status_short_break": {
+    "message": "Короткий перерыв...",
+    "description": "Short break status text"
+  },
+  "status_long_break": {
+    "message": "Длинный перерыв...",
+    "description": "Long break status text"
+  },
+  "status_ready": {
+    "message": "Готов к началу",
+    "description": "Ready to start status"
+  },
+  "status_paused": {
+    "message": "Приостановлено",
+    "description": "Paused status"
+  },
+  "status_waiting": {
+    "message": "Ожидание продолжения",
+    "description": "Waiting to continue status"
+  },
+  "status_timing": {
+    "message": "Отсчет...",
+    "description": "General timing status"
+  },
+
+  "cycles_completed": {
+    "message": "Завершено помодоро: {0}",
+    "description": "Completed cycles text with placeholder"
+  },
+
+  "label_current_task": {
+    "message": "Текущая задача",
+    "description": "Current task label"
+  },
+  "placeholder_task": {
+    "message": "напр., Організувати документ з вимогами",
+    "description": "Task input placeholder"
+  },
+  "label_focus_duration": {
+    "message": "Тривалість фокусування (хвилин)",
+    "description": "Focus duration label"
+  },
+  "btn_minutes": {
+    "message": "{0} хв",
+    "description": "Minutes button text"
+  },
+
+  "btn_start": {
+    "message": "Старт",
+    "description": "Start button text"
+  },
+  "btn_pause": {
+    "message": "Пауза",
+    "description": "Pause button text"
+  },
+  "btn_resume": {
+    "message": "Продолжить",
+    "description": "Resume button text"
+  },
+  "btn_reset": {
+    "message": "Сброс",
+    "description": "Reset button text"
+  },
+
+  "stat_today_pomodoros": {
+    "message": "Сегодня помодоро",
+    "description": "Today's pomodoros label"
+  },
+  "stat_today_minutes": {
+    "message": "Сегодня фокус (хв)",
+    "description": "Today's focus minutes label"
+  },
+  "stat_week_minutes": {
+    "message": "7 дней фокус (хв)",
+    "description": "Week focus minutes label"
+  },
+
+  "action_stats": {
+    "message": "Статистика",
+    "description": "Statistics action text"
+  },
+  "action_tasks": {
+    "message": "Задачи",
+    "description": "Tasks action text"
+  },
+  "action_achievements": {
+    "message": "Достижения",
+    "description": "Achievements action text"
+  },
+  "btn_export": {
+    "message": "Экспорт",
+    "description": "Export button text"
+  },
+
+  "task_edit_disabled_focus": {
+    "message": "Нельзя редактировать задачу во время фокуса",
+    "description": "Task edit disabled during focus"
+  },
+  "task_edit_disabled_break": {
+    "message": "Нельзя редактировать задачу во время перерыва",
+    "description": "Task edit disabled during break"
+  },
+
+  "options_title": {
+    "message": "Настройки Помодоро",
+    "description": "Options page title"
+  },
+  "options_duration_settings": {
+    "message": "Настройки времени",
+    "description": "Duration settings section"
+  },
+  "options_focus_minutes": {
+    "message": "Фокус (хвилин)",
+    "description": "Focus minutes setting"
+  },
+  "options_short_break": {
+    "message": "Короткий перерыв (хвилин)",
+    "description": "Short break setting"
+  },
+  "options_long_break": {
+    "message": "Длинный перерыв (хвилин)",
+    "description": "Long break setting"
+  },
+  "options_long_break_interval": {
+    "message": "Длинный перерыв каждые N циклов",
+    "description": "Long break interval setting"
+  },
+
+  "options_behavior_settings": {
+    "message": "Настройки поведения",
+    "description": "Behavior settings section"
+  },
+  "options_auto_start_next": {
+    "message": "Автозапуск следующей фазы",
+    "description": "Auto start next setting"
+  },
+  "options_notification_enabled": {
+    "message": "Показывать системные уведомления",
+    "description": "Notification enabled setting"
+  },
+  "options_open_alarm_page": {
+    "message": "Открывать страницу будильника",
+    "description": "Open alarm page setting"
+  },
+  "options_sound_enabled": {
+    "message": "Включить звук на странице будильника",
+    "description": "Sound enabled setting"
+  },
+
+  "options_appearance_settings": {
+    "message": "Настройки внешнего вида",
+    "description": "Appearance settings section"
+  },
+  "options_language": {
+    "message": "Язык",
+    "description": "Language setting label"
+  },
+  "options_theme_mode": {
+    "message": "Тема",
+    "description": "Theme mode label"
+  },
+  "options_theme_light": {
+    "message": "Светлая",
+    "description": "Light theme option"
+  },
+  "options_theme_dark": {
+    "message": "Тёмная",
+    "description": "Dark theme option"
+  },
+  "options_theme_auto": {
+    "message": "Системная",
+    "description": "Auto theme option"
+  },
+
+  "options_site_blocking": {
+    "message": "Блокировка сайтов",
+    "description": "Site blocking section"
+  },
+  "options_block_sites_enabled": {
+    "message": "Блокировать отвлекающие сайты во время фокуса",
+    "description": "Block sites enabled setting"
+  },
+  "options_blocked_sites_label": {
+    "message": "Заблокированные сайты (по одному на строку, поддерживает маски *.example.com)",
+    "description": "Blocked sites label"
+  },
+  "options_blocked_sites_placeholder": {
+    "message": "facebook.com\ntwitter.com\n*.youtube.com",
+    "description": "Blocked sites textarea placeholder"
+  },
+  "options_blocked_sites_hint": {
+    "message": "Блокировка сайтов требует разрешений расширения Chrome. Пожалуйста, настройте разрешения в параметрах расширения.",
+    "description": "Site blocking hint"
+  },
+
+  "btn_save_settings": {
+    "message": "Сохранить настройки",
+    "description": "Save settings button"
+  },
+  "msg_saved": {
+    "message": "Сохранено",
+    "description": "Saved confirmation message"
+  },
+
+  "stats_title": {
+    "message": "Статистика",
+    "description": "Statistics page title"
+  },
+  "stats_period_week": {
+    "message": "Неделя",
+    "description": "Week period selector"
+  },
+  "stats_period_month": {
+    "message": "Месяц",
+    "description": "Month period selector"
+  },
+  "stats_period_year": {
+    "message": "Год",
+    "description": "Year period selector"
+  },
+
+  "stats_total_minutes": {
+    "message": "Общее время фокуса",
+    "description": "Total focus time label"
+  },
+  "stats_unit_minutes": {
+    "message": "минут",
+    "description": "Minutes unit"
+  },
+  "stats_total_pomodoros": {
+    "message": "Завершено помодоро",
+    "description": "Total pomodoros label"
+  },
+  "stats_unit_pomodoros": {
+    "message": "помодоро",
+    "description": "Pomodoros unit"
+  },
+  "stats_current_streak": {
+    "message": "Текущая серия",
+    "description": "Current streak label"
+  },
+  "stats_unit_days": {
+    "message": "днів",
+    "description": "Days unit"
+  },
+
+  "stats_heatmap_title": {
+    "message": "Карта фокуса",
+    "description": "Heatmap section title"
+  },
+  "stats_heatmap_less": {
+    "message": "Меньше",
+    "description": "Heatmap legend less"
+  },
+  "stats_heatmap_more": {
+    "message": "Больше",
+    "description": "Heatmap legend more"
+  },
+  "stats_heatmap_minutes": {
+    "message": "{0}: {1} минут",
+    "description": "Heatmap cell tooltip"
+  },
+
+  "stats_trend_title": {
+    "message": "Тренд фокуса",
+    "description": "Trend chart title"
+  },
+  "stats_category_title": {
+    "message": "Распределение по категориям",
+    "description": "Category chart title"
+  },
+  "stats_no_data": {
+    "message": "Нет данных",
+    "description": "No data message"
+  },
+  "stats_uncategorized": {
+    "message": "Без категории",
+    "description": "Uncategorized label"
+  },
+
+  "stats_export_title": {
+    "message": "Экспорт данных",
+    "description": "Export section title"
+  },
+
+  "day_mon": { "message": "Пн" },
+  "day_tue": { "message": "Вт" },
+  "day_wed": { "message": "Ср" },
+  "day_thu": { "message": "Чт" },
+  "day_fri": { "message": "Пт" },
+  "day_sat": { "message": "Сб" },
+  "day_sun": { "message": "Вс" },
+
+  "month_1": { "message": "Янв" },
+  "month_2": { "message": "Фев" },
+  "month_3": { "message": "Мар" },
+  "month_4": { "message": "Апр" },
+  "month_5": { "message": "Май" },
+  "month_6": { "message": "Июн" },
+  "month_7": { "message": "Июл" },
+  "month_8": { "message": "Авг" },
+  "month_9": { "message": "Сен" },
+  "month_10": { "message": "Окт" },
+  "month_11": { "message": "Ноя" },
+  "month_12": { "message": "Дек" },
+
+  "tasks_title": {
+    "message": "Управление задачами",
+    "description": "Tasks page title"
+  },
+  "btn_add_task": {
+    "message": "Добавить задачу",
+    "description": "Add task button"
+  },
+
+  "filter_category": {
+    "message": "Категория",
+    "description": "Category filter label"
+  },
+  "filter_status": {
+    "message": "Статус",
+    "description": "Status filter label"
+  },
+  "filter_all": {
+    "message": "Все",
+    "description": "All filter option"
+  },
+  "filter_pending": {
+    "message": "В ожидании",
+    "description": "Pending status filter"
+  },
+  "filter_completed": {
+    "message": "Завершено",
+    "description": "Completed status filter"
+  },
+
+  "cat_work": { "message": "Работа" },
+  "cat_study": { "message": "Учеба" },
+  "cat_reading": { "message": "Чтение" },
+  "cat_coding": { "message": "Программирование" },
+  "cat_writing": { "message": "Написание" },
+  "cat_meeting": { "message": "Встреча" },
+  "cat_exercise": { "message": "Упражнение" },
+  "cat_other": { "message": "Другое" },
+
+  "priority_high": { "message": "Высокий" },
+  "priority_medium": { "message": "Средний" },
+  "priority_low": { "message": "Низкий" },
+
+  "section_pinned_tasks": {
+    "message": "Закрепленные задачи",
+    "description": "Pinned tasks section"
+  },
+  "section_task_list": {
+    "message": "Список задач",
+    "description": "Task list section"
+  },
+
+  "empty_tasks_title": {
+    "message": "Нет задач",
+    "description": "Empty tasks title"
+  },
+  "empty_tasks_desc": {
+    "message": "Нажмите \"Добавить задачу\" для создания первой задачи",
+    "description": "Empty tasks description"
+  },
+
+  "modal_new_task": {
+    "message": "Новая задача",
+    "description": "New task modal title"
+  },
+  "modal_edit_task": {
+    "message": "Редактировать задачу",
+    "description": "Edit task modal title"
+  },
+
+  "label_task_name": {
+    "message": "Название задачи",
+    "description": "Task name label"
+  },
+  "label_required": {
+    "message": "*",
+    "description": "Required field indicator"
+  },
+  "placeholder_task_name": {
+    "message": "напр., Завершить документацию проекта",
+    "description": "Task name placeholder"
+  },
+  "label_task_description": {
+    "message": "Описание",
+    "description": "Task description label"
+  },
+  "placeholder_task_description": {
+    "message": "Добавьте описание задачи...",
+    "description": "Task description placeholder"
+  },
+  "label_category": {
+    "message": "Категория",
+    "description": "Category label"
+  },
+  "label_priority": {
+    "message": "Приоритет",
+    "description": "Priority label"
+  },
+  "label_estimated_time": {
+    "message": "Оценочное время (минут)",
+    "description": "Estimated time label"
+  },
+  "placeholder_estimated_time": {
+    "message": "напр., 60",
+    "description": "Estimated time placeholder"
+  },
+
+  "btn_cancel": {
+    "message": "Отмена",
+    "description": "Cancel button"
+  },
+  "btn_save": {
+    "message": "Сохранить",
+    "description": "Save button"
+  },
+
+  "action_start_focus": {
+    "message": "Начать фокус",
+    "description": "Start focus action"
+  },
+  "action_edit": {
+    "message": "Редактировать",
+    "description": "Edit action"
+  },
+  "action_pin": {
+    "message": "Закрепить",
+    "description": "Pin action"
+  },
+  "action_unpin": {
+    "message": "Открепить",
+    "description": "Unpin action"
+  },
+  "action_delete": {
+    "message": "Удалить",
+    "description": "Delete action"
+  },
+
+  "confirm_delete_task": {
+    "message": "Вы уверены, что хотите удалить эту задачу?",
+    "description": "Delete task confirmation"
+  },
+
+  "achievements_title": {
+    "message": "Достижения",
+    "description": "Achievements page title"
+  },
+  "achievements_unlocked": {
+    "message": "Разблокировано достижений",
+    "description": "Unlocked achievements label"
+  },
+  "achievements_total_hours": {
+    "message": "Всего часов фокуса",
+    "description": "Total focus hours label"
+  },
+  "achievements_streak": {
+    "message": "Текущая серия",
+    "description": "Achievement streak label"
+  },
+  "achievements_my_achievements": {
+    "message": "Мои достижения",
+    "description": "My achievements section"
+  },
+  "achievements_recent_unlocks": {
+    "message": "Недавние разблокировки",
+    "description": "Recent unlocks section"
+  },
+  "achievements_unlocked_badge": {
+    "message": "Разблокировано",
+    "description": "Unlocked badge text"
+  },
+
+  "ach_first_pomodoro_name": { "message": "Первые шаги" },
+  "ach_first_pomodoro_desc": { "message": "Завершите первое помодоро" },
+  "ach_daily_goal_name": { "message": "Ежедневный прогресс" },
+  "ach_daily_goal_desc": { "message": "Достигните дневной цели (120 минут)" },
+  "ach_week_goal_name": { "message": "Последовательность" },
+  "ach_week_goal_desc": { "message": "Достигните недельной цели (720 минут)" },
+  "ach_streak_3_name": { "message": "Тройной удар" },
+  "ach_streak_3_desc": { "message": "3-дневная серия достижения целей" },
+  "ach_streak_7_name": { "message": "Воин недели" },
+  "ach_streak_7_desc": { "message": "7-дневная серия достижения целей" },
+  "ach_streak_30_name": { "message": "Месячный мастер" },
+  "ach_streak_30_desc": { "message": "30-дневная серия достижения целей" },
+  "ach_focus_100_name": { "message": "Век" },
+  "ach_focus_100_desc": { "message": "100 часов общего фокуса" },
+  "ach_focus_500_name": { "message": "Мастер фокуса" },
+  "ach_focus_500_desc": { "message": "500 часов общего фокуса" },
+  "ach_early_bird_name": { "message": "Ранняя пташка" },
+  "ach_early_bird_desc": { "message": "Завершите помодоро до 8 утра" },
+  "ach_night_owl_name": { "message": "Ночная сова" },
+  "ach_night_owl_desc": { "message": "Завершите помодоро после 10 вечера" },
+  "ach_speed_demon_name": { "message": "Демон скорости" },
+  "ach_speed_demon_desc": { "message": "Завершите 8 помодоро за день" },
+  "ach_marathon_name": { "message": "Марафон" },
+  "ach_marathon_desc": { "message": "Фокусируйтесь 4+ часа за день" },
+  "ach_perfectionist_name": { "message": "Перфекционист" },
+  "ach_perfectionist_desc": { "message": "Завершите 7 последовательных помодоро" },
+
+  "notification_achievement_unlocked": {
+    "message": "Достижение разблокировано!",
+    "description": "Achievement unlocked notification title"
+  },
+  "notification_pomodoro": {
+    "message": "Помодоро",
+    "description": "Pomodoro notification title"
+  },
+  "notification_focus_complete": {
+    "message": "Время фокуса завершено, отдохните!",
+    "description": "Focus complete message"
+  },
+  "notification_focus_complete_long": {
+    "message": "Раунд фокуса завершен, время для длинного перерыва.",
+    "description": "Focus complete with long break message"
+  },
+  "notification_break_complete": {
+    "message": "Перерыв завершен, начните следующую сессию фокуса.",
+    "description": "Break complete message"
+  },
+
+  "alarm_title": {
+    "message": "Время вышло!",
+    "description": "Alarm page title"
+  },
+  "alarm_focus_complete": {
+    "message": "Фокус завершен, отдохните",
+    "description": "Focus complete subtitle"
+  },
+  "alarm_break_complete": {
+    "message": "Перерыв завершен, готовы к следующему раунду",
+    "description": "Break complete subtitle"
+  },
+  "alarm_phase_ended": {
+    "message": "Текущая фаза завершена",
+    "description": "Phase ended message"
+  },
+  "alarm_next_step": {
+    "message": "Следующий шаг",
+    "description": "Next step label"
+  },
+  "alarm_start_directly": {
+    "message": "Вы можете сразу начать новую сессию фокуса.",
+    "description": "Start directly message"
+  },
+  "alarm_next_phase_suggestion": {
+    "message": "Вы завершили сессию {0}, следующая фаза: {1}.",
+    "description": "Next phase suggestion with placeholders"
+  },
+  "alarm_break_complete_suggestion": {
+    "message": "Перерыв завершен, время для следующей сессии фокуса.",
+    "description": "Break complete suggestion"
+  },
+  "alarm_auto_continue": {
+    "message": "Автопродолжение включено, следующая фаза уже запущена.",
+    "description": "Auto continue message"
+  },
+  "btn_start_next_phase": {
+    "message": "Начать следующую фазу",
+    "description": "Start next phase button"
+  },
+  "btn_start_focus": {
+    "message": "Начать фокус",
+    "description": "Start focus button"
+  },
+  "btn_start_phase": {
+    "message": "Начать {0}",
+    "description": "Start phase button with placeholder"
+  },
+  "btn_extend_5min": {
+    "message": "Продлить на 5 минут",
+    "description": "Extend 5 minutes button"
+  },
+  "btn_skip_break": {
+    "message": "Пропустить перерыв, начать фокус",
+    "description": "Skip break button"
+  },
+  "btn_got_it": {
+    "message": "Понятно",
+    "description": "Got it button"
+  },
+
+  "quote_1": { "message": "Отдых нужен, чтобы пройти дальше" },
+  "quote_2": { "message": "Фокус - ключ к успеху" },
+  "quote_3": { "message": "Время - деньги" },
+  "quote_4": { "message": "Успех - это прогресс каждый день" },
+  "quote_5": { "message": "Время как вода в губке - если сжать, всегда найдется" },
+  "quote_author_5": { "message": "Лу Синь" },
+  "quote_6": { "message": "Совершенство от усердия, теряется в развлечениях" },
+  "quote_author_6": { "message": "Хань Юй" },
+  "quote_7": { "message": "Путь в тысячу миль начинается с одного шага" },
+  "quote_author_7": { "message": "Лао-цзы" },
+  "quote_8": { "message": "Малые шаги ведут к тысячам миль" },
+  "quote_author_8": { "message": "Сюнь-цзы" },
+  "quote_author_anon": { "message": "Аноним" },
+
+  "blocked_title": {
+    "message": "Режим фокуса активен",
+    "description": "Blocked page title"
+  },
+  "blocked_message": {
+    "message": "Этот сайт временно заблокирован. Пожалуйста, сосредоточьтесь на текущей задаче.",
+    "description": "Blocked page message"
+  },
+  "blocked_current_site": {
+    "message": "Текущий сайт",
+    "description": "Current site label"
+  },
+  "blocked_unknown_site": {
+    "message": "Неизвестный сайт",
+    "description": "Unknown site text"
+  },
+  "blocked_not_focusing": {
+    "message": "Не в режиме фокуса",
+    "description": "Not focusing status"
+  },
+  "btn_temp_access": {
+    "message": "Временный доступ (5 мин)",
+    "description": "Temporary access button"
+  },
+  "btn_end_focus_access": {
+    "message": "Завершить фокус, разрешить доступ",
+    "description": "End focus and allow access button"
+  },
+
+  "menu_toggle": {
+    "message": "Помодоро: Старт/Пауза",
+    "description": "Context menu toggle"
+  },
+  "menu_reset": {
+    "message": "Помодоро: Сброс",
+    "description": "Context menu reset"
+  },
+
+  "error_start_timer": { "message": "Ошибка запуска таймера:" },
+  "error_pause_timer": { "message": "Ошибка паузы таймера:" },
+  "error_reset_timer": { "message": "Ошибка сброса таймера:" },
+  "error_load_state": { "message": "Ошибка загрузки состояния:" },
+  "error_save_settings": { "message": "Ошибка сохранения настроек:" },
+  "error_load_settings": { "message": "Ошибка загрузки настроек:" },
+  "error_load_stats": { "message": "Ошибка загрузки статистики:" },
+  "error_load_tasks": { "message": "Ошибка загрузки задач:" },
+  "error_load_achievements": { "message": "Ошибка загрузки достижений:" },
+  "error_init_alarm": { "message": "Ошибка инициализации страницы будильника:" },
+  "error_start_next": { "message": "Ошибка запуска следующей фазы:" },
+  "error_extend": { "message": "Ошибка продления:" },
+  "error_skip_break": { "message": "Ошибка пропуска перерыва:" },
+  "error_check_achievements": { "message": "Ошибка проверки достижений:" },
+  "error_init": { "message": "Ошибка инициализации Помодоро:" },
+  "error_startup": { "message": "Ошибка восстановления при запуске Помодоро:" },
+  "error_timer_complete": { "message": "Ошибка обработки завершения таймера:" },
+  "error_shortcut_toggle": { "message": "Ошибка горячей клавиши старт/пауза:" },
+  "error_shortcut_reset": { "message": "Ошибка горячей клавиши сброса:" },
+  "error_menu_toggle": { "message": "Ошибка меню старт/пауза:" },
+  "error_menu_reset": { "message": "Ошибка меню сброса:" }
+}

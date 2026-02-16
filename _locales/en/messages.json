@@ -1,0 +1,704 @@
+{
+  "ext_name": {
+    "message": "Pomodoro Timer",
+    "description": "Extension name"
+  },
+  "ext_description": {
+    "message": "A Pomodoro timer for focused work, supporting work/break cycles, statistics and reminders",
+    "description": "Extension description"
+  },
+  "cmd_start_pause": {
+    "message": "Start or pause timer",
+    "description": "Keyboard shortcut description for start/pause"
+  },
+  "cmd_reset": {
+    "message": "Reset timer",
+    "description": "Keyboard shortcut description for reset"
+  },
+
+  "app_title": {
+    "message": "Pomodoro",
+    "description": "Main app title"
+  },
+  "btn_settings": {
+    "message": "Settings",
+    "description": "Settings button title"
+  },
+
+  "phase_focus": {
+    "message": "Focus",
+    "description": "Focus phase label"
+  },
+  "phase_short_break": {
+    "message": "Short Break",
+    "description": "Short break phase label"
+  },
+  "phase_long_break": {
+    "message": "Long Break",
+    "description": "Long break phase label"
+  },
+
+  "status_focus": {
+    "message": "Focusing...",
+    "description": "Focus status text"
+  },
+  "status_short_break": {
+    "message": "Short break...",
+    "description": "Short break status text"
+  },
+  "status_long_break": {
+    "message": "Long break...",
+    "description": "Long break status text"
+  },
+  "status_ready": {
+    "message": "Ready to start",
+    "description": "Ready to start status"
+  },
+  "status_paused": {
+    "message": "Paused",
+    "description": "Paused status"
+  },
+  "status_waiting": {
+    "message": "Waiting to continue",
+    "description": "Waiting to continue status"
+  },
+  "status_timing": {
+    "message": "Timing...",
+    "description": "General timing status"
+  },
+
+  "cycles_completed": {
+    "message": "{0} pomodoros completed",
+    "description": "Completed cycles text with placeholder"
+  },
+
+  "label_current_task": {
+    "message": "Current Task",
+    "description": "Current task label"
+  },
+  "placeholder_task": {
+    "message": "e.g., Organize requirements document",
+    "description": "Task input placeholder"
+  },
+  "label_focus_duration": {
+    "message": "Focus Duration (minutes)",
+    "description": "Focus duration label"
+  },
+  "btn_minutes": {
+    "message": "{0} min",
+    "description": "Minutes button text"
+  },
+
+  "btn_start": {
+    "message": "Start",
+    "description": "Start button text"
+  },
+  "btn_pause": {
+    "message": "Pause",
+    "description": "Pause button text"
+  },
+  "btn_resume": {
+    "message": "Resume",
+    "description": "Resume button text"
+  },
+  "btn_reset": {
+    "message": "Reset",
+    "description": "Reset button text"
+  },
+
+  "stat_today_pomodoros": {
+    "message": "Today's Pomodoros",
+    "description": "Today's pomodoros label"
+  },
+  "stat_today_minutes": {
+    "message": "Today's Focus (min)",
+    "description": "Today's focus minutes label"
+  },
+  "stat_week_minutes": {
+    "message": "Last 7 Days Focus (min)",
+    "description": "Week focus minutes label"
+  },
+
+  "action_stats": {
+    "message": "Statistics",
+    "description": "Statistics action text"
+  },
+  "action_tasks": {
+    "message": "Tasks",
+    "description": "Tasks action text"
+  },
+  "action_achievements": {
+    "message": "Achievements",
+    "description": "Achievements action text"
+  },
+  "btn_export": {
+    "message": "Export",
+    "description": "Export button text"
+  },
+
+  "task_edit_disabled_focus": {
+    "message": "Cannot edit task during focus",
+    "description": "Task edit disabled during focus"
+  },
+  "task_edit_disabled_break": {
+    "message": "Cannot edit task during break",
+    "description": "Task edit disabled during break"
+  },
+
+  "options_title": {
+    "message": "Pomodoro Settings",
+    "description": "Options page title"
+  },
+  "options_duration_settings": {
+    "message": "Duration Settings",
+    "description": "Duration settings section"
+  },
+  "options_focus_minutes": {
+    "message": "Focus Duration (minutes)",
+    "description": "Focus minutes setting"
+  },
+  "options_short_break": {
+    "message": "Short Break (minutes)",
+    "description": "Short break setting"
+  },
+  "options_long_break": {
+    "message": "Long Break (minutes)",
+    "description": "Long break setting"
+  },
+  "options_long_break_interval": {
+    "message": "Long break every N cycles",
+    "description": "Long break interval setting"
+  },
+
+  "options_behavior_settings": {
+    "message": "Behavior Settings",
+    "description": "Behavior settings section"
+  },
+  "options_auto_start_next": {
+    "message": "Auto-start next phase when timer ends",
+    "description": "Auto start next setting"
+  },
+  "options_notification_enabled": {
+    "message": "Show system notifications",
+    "description": "Notification enabled setting"
+  },
+  "options_open_alarm_page": {
+    "message": "Open alarm page",
+    "description": "Open alarm page setting"
+  },
+  "options_sound_enabled": {
+    "message": "Enable sound on alarm page",
+    "description": "Sound enabled setting"
+  },
+
+  "options_appearance_settings": {
+    "message": "Appearance Settings",
+    "description": "Appearance settings section"
+  },
+  "options_language": {
+    "message": "Language",
+    "description": "Language setting label"
+  },
+  "options_theme_mode": {
+    "message": "Theme Mode",
+    "description": "Theme mode label"
+  },
+  "options_theme_light": {
+    "message": "Light",
+    "description": "Light theme option"
+  },
+  "options_theme_dark": {
+    "message": "Dark",
+    "description": "Dark theme option"
+  },
+  "options_theme_auto": {
+    "message": "System",
+    "description": "Auto theme option"
+  },
+
+  "options_site_blocking": {
+    "message": "Site Blocking",
+    "description": "Site blocking section"
+  },
+  "options_block_sites_enabled": {
+    "message": "Block distracting sites during focus",
+    "description": "Block sites enabled setting"
+  },
+  "options_blocked_sites_label": {
+    "message": "Blocked sites (one per line, supports wildcards *.example.com)",
+    "description": "Blocked sites label"
+  },
+  "options_blocked_sites_placeholder": {
+    "message": "facebook.com\ntwitter.com\n*.youtube.com",
+    "description": "Blocked sites textarea placeholder"
+  },
+  "options_blocked_sites_hint": {
+    "message": "Site blocking requires Chrome extension permissions. Please set content script permissions in extension options.",
+    "description": "Site blocking hint"
+  },
+
+  "btn_save_settings": {
+    "message": "Save Settings",
+    "description": "Save settings button"
+  },
+  "msg_saved": {
+    "message": "Saved",
+    "description": "Saved confirmation message"
+  },
+
+  "stats_title": {
+    "message": "Statistics",
+    "description": "Statistics page title"
+  },
+  "stats_period_week": {
+    "message": "Week",
+    "description": "Week period selector"
+  },
+  "stats_period_month": {
+    "message": "Month",
+    "description": "Month period selector"
+  },
+  "stats_period_year": {
+    "message": "Year",
+    "description": "Year period selector"
+  },
+
+  "stats_total_minutes": {
+    "message": "Total Focus Time",
+    "description": "Total focus time label"
+  },
+  "stats_unit_minutes": {
+    "message": "minutes",
+    "description": "Minutes unit"
+  },
+  "stats_total_pomodoros": {
+    "message": "Pomodoros Completed",
+    "description": "Total pomodoros label"
+  },
+  "stats_unit_pomodoros": {
+    "message": "pomodoros",
+    "description": "Pomodoros unit"
+  },
+  "stats_current_streak": {
+    "message": "Current Streak",
+    "description": "Current streak label"
+  },
+  "stats_unit_days": {
+    "message": "days",
+    "description": "Days unit"
+  },
+
+  "stats_heatmap_title": {
+    "message": "Focus Heatmap",
+    "description": "Heatmap section title"
+  },
+  "stats_heatmap_less": {
+    "message": "Less",
+    "description": "Heatmap legend less"
+  },
+  "stats_heatmap_more": {
+    "message": "More",
+    "description": "Heatmap legend more"
+  },
+  "stats_heatmap_minutes": {
+    "message": "{0}: {1} minutes",
+    "description": "Heatmap cell tooltip"
+  },
+
+  "stats_trend_title": {
+    "message": "Focus Trend",
+    "description": "Trend chart title"
+  },
+  "stats_category_title": {
+    "message": "Task Category Distribution",
+    "description": "Category chart title"
+  },
+  "stats_no_data": {
+    "message": "No data",
+    "description": "No data message"
+  },
+  "stats_uncategorized": {
+    "message": "Uncategorized",
+    "description": "Uncategorized label"
+  },
+
+  "stats_export_title": {
+    "message": "Export Data",
+    "description": "Export section title"
+  },
+
+  "day_mon": { "message": "Mon" },
+  "day_tue": { "message": "Tue" },
+  "day_wed": { "message": "Wed" },
+  "day_thu": { "message": "Thu" },
+  "day_fri": { "message": "Fri" },
+  "day_sat": { "message": "Sat" },
+  "day_sun": { "message": "Sun" },
+
+  "month_1": { "message": "Jan" },
+  "month_2": { "message": "Feb" },
+  "month_3": { "message": "Mar" },
+  "month_4": { "message": "Apr" },
+  "month_5": { "message": "May" },
+  "month_6": { "message": "Jun" },
+  "month_7": { "message": "Jul" },
+  "month_8": { "message": "Aug" },
+  "month_9": { "message": "Sep" },
+  "month_10": { "message": "Oct" },
+  "month_11": { "message": "Nov" },
+  "month_12": { "message": "Dec" },
+
+  "tasks_title": {
+    "message": "Task Management",
+    "description": "Tasks page title"
+  },
+  "btn_add_task": {
+    "message": "Add Task",
+    "description": "Add task button"
+  },
+
+  "filter_category": {
+    "message": "Category",
+    "description": "Category filter label"
+  },
+  "filter_status": {
+    "message": "Status",
+    "description": "Status filter label"
+  },
+  "filter_all": {
+    "message": "All",
+    "description": "All filter option"
+  },
+  "filter_pending": {
+    "message": "Pending",
+    "description": "Pending status filter"
+  },
+  "filter_completed": {
+    "message": "Completed",
+    "description": "Completed status filter"
+  },
+
+  "cat_work": { "message": "Work" },
+  "cat_study": { "message": "Study" },
+  "cat_reading": { "message": "Reading" },
+  "cat_coding": { "message": "Coding" },
+  "cat_writing": { "message": "Writing" },
+  "cat_meeting": { "message": "Meeting" },
+  "cat_exercise": { "message": "Exercise" },
+  "cat_other": { "message": "Other" },
+
+  "priority_high": { "message": "High" },
+  "priority_medium": { "message": "Medium" },
+  "priority_low": { "message": "Low" },
+
+  "section_pinned_tasks": {
+    "message": "Pinned Tasks",
+    "description": "Pinned tasks section"
+  },
+  "section_task_list": {
+    "message": "Task List",
+    "description": "Task list section"
+  },
+
+  "empty_tasks_title": {
+    "message": "No Tasks",
+    "description": "Empty tasks title"
+  },
+  "empty_tasks_desc": {
+    "message": "Click \"Add Task\" to create your first task",
+    "description": "Empty tasks description"
+  },
+
+  "modal_new_task": {
+    "message": "New Task",
+    "description": "New task modal title"
+  },
+  "modal_edit_task": {
+    "message": "Edit Task",
+    "description": "Edit task modal title"
+  },
+
+  "label_task_name": {
+    "message": "Task Name",
+    "description": "Task name label"
+  },
+  "label_required": {
+    "message": "*",
+    "description": "Required field indicator"
+  },
+  "placeholder_task_name": {
+    "message": "e.g., Complete project documentation",
+    "description": "Task name placeholder"
+  },
+  "label_task_description": {
+    "message": "Description",
+    "description": "Task description label"
+  },
+  "placeholder_task_description": {
+    "message": "Add task description...",
+    "description": "Task description placeholder"
+  },
+  "label_category": {
+    "message": "Category",
+    "description": "Category label"
+  },
+  "label_priority": {
+    "message": "Priority",
+    "description": "Priority label"
+  },
+  "label_estimated_time": {
+    "message": "Estimated Time (minutes)",
+    "description": "Estimated time label"
+  },
+  "placeholder_estimated_time": {
+    "message": "e.g., 60",
+    "description": "Estimated time placeholder"
+  },
+
+  "btn_cancel": {
+    "message": "Cancel",
+    "description": "Cancel button"
+  },
+  "btn_save": {
+    "message": "Save",
+    "description": "Save button"
+  },
+
+  "action_start_focus": {
+    "message": "Start Focus",
+    "description": "Start focus action"
+  },
+  "action_edit": {
+    "message": "Edit",
+    "description": "Edit action"
+  },
+  "action_pin": {
+    "message": "Pin",
+    "description": "Pin action"
+  },
+  "action_unpin": {
+    "message": "Unpin",
+    "description": "Unpin action"
+  },
+  "action_delete": {
+    "message": "Delete",
+    "description": "Delete action"
+  },
+
+  "confirm_delete_task": {
+    "message": "Are you sure you want to delete this task?",
+    "description": "Delete task confirmation"
+  },
+
+  "achievements_title": {
+    "message": "Achievements",
+    "description": "Achievements page title"
+  },
+  "achievements_unlocked": {
+    "message": "Achievements Unlocked",
+    "description": "Unlocked achievements label"
+  },
+  "achievements_total_hours": {
+    "message": "Total Focus Hours",
+    "description": "Total focus hours label"
+  },
+  "achievements_streak": {
+    "message": "Current Streak",
+    "description": "Achievement streak label"
+  },
+  "achievements_my_achievements": {
+    "message": "My Achievements",
+    "description": "My achievements section"
+  },
+  "achievements_recent_unlocks": {
+    "message": "Recent Unlocks",
+    "description": "Recent unlocks section"
+  },
+  "achievements_unlocked_badge": {
+    "message": "Unlocked",
+    "description": "Unlocked badge text"
+  },
+
+  "ach_first_pomodoro_name": { "message": "First Steps" },
+  "ach_first_pomodoro_desc": { "message": "Complete your first pomodoro" },
+  "ach_daily_goal_name": { "message": "Daily Progress" },
+  "ach_daily_goal_desc": { "message": "Reach daily goal (120 minutes)" },
+  "ach_week_goal_name": { "message": "Consistent" },
+  "ach_week_goal_desc": { "message": "Reach weekly goal (720 minutes)" },
+  "ach_streak_3_name": { "message": "Triple Threat" },
+  "ach_streak_3_desc": { "message": "3-day streak reaching goals" },
+  "ach_streak_7_name": { "message": "Week Warrior" },
+  "ach_streak_7_desc": { "message": "7-day streak reaching goals" },
+  "ach_streak_30_name": { "message": "Monthly Master" },
+  "ach_streak_30_desc": { "message": "30-day streak reaching goals" },
+  "ach_focus_100_name": { "message": "Century" },
+  "ach_focus_100_desc": { "message": "100 hours of total focus" },
+  "ach_focus_500_name": { "message": "Focus Master" },
+  "ach_focus_500_desc": { "message": "500 hours of total focus" },
+  "ach_early_bird_name": { "message": "Early Bird" },
+  "ach_early_bird_desc": { "message": "Complete a pomodoro before 8am" },
+  "ach_night_owl_name": { "message": "Night Owl" },
+  "ach_night_owl_desc": { "message": "Complete a pomodoro after 10pm" },
+  "ach_speed_demon_name": { "message": "Speed Demon" },
+  "ach_speed_demon_desc": { "message": "Complete 8 pomodoros in one day" },
+  "ach_marathon_name": { "message": "Marathon" },
+  "ach_marathon_desc": { "message": "Focus for 4+ hours in one day" },
+  "ach_perfectionist_name": { "message": "Perfectionist" },
+  "ach_perfectionist_desc": { "message": "Complete 7 consecutive pomodoros" },
+
+  "notification_achievement_unlocked": {
+    "message": "Achievement Unlocked!",
+    "description": "Achievement unlocked notification title"
+  },
+  "notification_pomodoro": {
+    "message": "Pomodoro",
+    "description": "Pomodoro notification title"
+  },
+  "notification_focus_complete": {
+    "message": "Focus time complete, take a break!",
+    "description": "Focus complete message"
+  },
+  "notification_focus_complete_long": {
+    "message": "Focus round complete, time for a long break.",
+    "description": "Focus complete with long break message"
+  },
+  "notification_break_complete": {
+    "message": "Break complete, start your next focus session.",
+    "description": "Break complete message"
+  },
+
+  "alarm_title": {
+    "message": "Time's Up!",
+    "description": "Alarm page title"
+  },
+  "alarm_focus_complete": {
+    "message": "Focus complete, take a break",
+    "description": "Focus complete subtitle"
+  },
+  "alarm_break_complete": {
+    "message": "Break complete, ready for next round",
+    "description": "Break complete subtitle"
+  },
+  "alarm_phase_ended": {
+    "message": "Current phase ended",
+    "description": "Phase ended message"
+  },
+  "alarm_next_step": {
+    "message": "Next Step",
+    "description": "Next step label"
+  },
+  "alarm_start_directly": {
+    "message": "You can start a new focus session directly.",
+    "description": "Start directly message"
+  },
+  "alarm_next_phase_suggestion": {
+    "message": "You just completed a {0} session, next phase: {1}.",
+    "description": "Next phase suggestion with placeholders"
+  },
+  "alarm_break_complete_suggestion": {
+    "message": "Break complete, time for the next focus session.",
+    "description": "Break complete suggestion"
+  },
+  "alarm_auto_continue": {
+    "message": "Auto-continue enabled, next phase already running.",
+    "description": "Auto continue message"
+  },
+  "btn_start_next_phase": {
+    "message": "Start Next Phase",
+    "description": "Start next phase button"
+  },
+  "btn_start_focus": {
+    "message": "Start Focus",
+    "description": "Start focus button"
+  },
+  "btn_start_phase": {
+    "message": "Start {0}",
+    "description": "Start phase button with placeholder"
+  },
+  "btn_extend_5min": {
+    "message": "Extend 5 Minutes",
+    "description": "Extend 5 minutes button"
+  },
+  "btn_skip_break": {
+    "message": "Skip Break, Start Focus",
+    "description": "Skip break button"
+  },
+  "btn_got_it": {
+    "message": "Got It",
+    "description": "Got it button"
+  },
+
+  "quote_1": { "message": "Rest is to prepare for a longer journey" },
+  "quote_2": { "message": "Focus is the key to success" },
+  "quote_3": { "message": "Time is money" },
+  "quote_4": { "message": "Success is making progress every day" },
+  "quote_5": { "message": "Time is like water in a sponge, there's always some if you squeeze" },
+  "quote_author_5": { "message": "Lu Xun" },
+  "quote_6": { "message": "Excellence comes from diligence, wasted in play" },
+  "quote_author_6": { "message": "Han Yu" },
+  "quote_7": { "message": "A journey of a thousand miles begins with a single step" },
+  "quote_author_7": { "message": "Laozi" },
+  "quote_8": { "message": "Small steps lead to a thousand miles" },
+  "quote_author_8": { "message": "Xunzi" },
+  "quote_author_anon": { "message": "Anonymous" },
+
+  "blocked_title": {
+    "message": "Focus Mode Active",
+    "description": "Blocked page title"
+  },
+  "blocked_message": {
+    "message": "This site is temporarily blocked. Please focus on your current task.",
+    "description": "Blocked page message"
+  },
+  "blocked_current_site": {
+    "message": "Current Site",
+    "description": "Current site label"
+  },
+  "blocked_unknown_site": {
+    "message": "Unknown Site",
+    "description": "Unknown site text"
+  },
+  "blocked_not_focusing": {
+    "message": "Not in Focus Mode",
+    "description": "Not focusing status"
+  },
+  "btn_temp_access": {
+    "message": "Temporary Access (5 min)",
+    "description": "Temporary access button"
+  },
+  "btn_end_focus_access": {
+    "message": "End Focus, Allow Access",
+    "description": "End focus and allow access button"
+  },
+
+  "menu_toggle": {
+    "message": "Pomodoro: Start/Pause",
+    "description": "Context menu toggle"
+  },
+  "menu_reset": {
+    "message": "Pomodoro: Reset",
+    "description": "Context menu reset"
+  },
+
+  "error_start_timer": { "message": "Failed to start timer:" },
+  "error_pause_timer": { "message": "Failed to pause timer:" },
+  "error_reset_timer": { "message": "Failed to reset timer:" },
+  "error_load_state": { "message": "Failed to load state:" },
+  "error_save_settings": { "message": "Failed to save settings:" },
+  "error_load_settings": { "message": "Failed to load settings:" },
+  "error_load_stats": { "message": "Failed to load statistics:" },
+  "error_load_tasks": { "message": "Failed to load tasks:" },
+  "error_load_achievements": { "message": "Failed to load achievements:" },
+  "error_init_alarm": { "message": "Failed to initialize alarm page:" },
+  "error_start_next": { "message": "Failed to start next phase:" },
+  "error_extend": { "message": "Failed to extend:" },
+  "error_skip_break": { "message": "Failed to skip break:" },
+  "error_check_achievements": { "message": "Failed to check achievements:" },
+  "error_init": { "message": "Pomodoro initialization failed:" },
+  "error_startup": { "message": "Pomodoro startup recovery failed:" },
+  "error_timer_complete": { "message": "Failed to handle timer completion:" },
+  "error_shortcut_toggle": { "message": "Shortcut start/pause failed:" },
+  "error_shortcut_reset": { "message": "Shortcut reset failed:" },
+  "error_menu_toggle": { "message": "Menu start/pause failed:" },
+  "error_menu_reset": { "message": "Menu reset failed:" }
+}

@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title data-i18n="alarm_title">时间到了！</title>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <link rel="stylesheet" href="themes.css">
+  <link rel="stylesheet" href="alarm.css">
+  <script src="i18n.js"></script>
+</head>
+<body>
+  <div class="background-animation"></div>
+  <div class="container">
+    <div class="card">
+      <div class="icon-container">
+        <div class="icon-circle">
+          <span class="material-icons icon-main">alarm</span>
+        </div>
+        <div class="ripple-effect"></div>
+      </div>
+
+      <h1 class="title" data-i18n="alarm_title">时间到了！</h1>
+      <p class="subtitle" id="subtitle">专注时间结束，休息一下吧</p>
+
+      <div class="next-box">
+        <div class="next-title" data-i18n="alarm_next_step">下一步</div>
+        <div id="nextStepText">你可以开始下一阶段，或者延长 5 分钟。</div>
+      </div>
+
+      <div class="quote-container">
+        <p class="quote" id="quoteText">休息是为了走更远的路</p>
+        <p class="quote-author">— 佚名</p>
+      </div>
+
+      <div class="actions">
+        <button class="btn btn-primary" id="nextBtn">
+          <span class="material-icons">play_arrow</span>
+          <span id="nextBtnText" data-i18n="btn_start_next_phase">开始下一阶段</span>
+        </button>
+        <button class="btn btn-secondary" id="extendBtn">
+          <span class="material-icons">add_circle</span>
+          <span data-i18n="btn_extend_5min">延长 5 分钟</span>
+        </button>
+      </div>
+
+      <div class="actions actions-bottom">
+        <button class="btn btn-tertiary" id="skipBtn">
+          <span class="material-icons">skip_next</span>
+          <span data-i18n="btn_skip_break">跳过休息，直接专注</span>
+        </button>
+        <button class="btn btn-tertiary" id="closeBtn">
+          <span class="material-icons">check_circle</span>
+          <span data-i18n="btn_got_it">知道了</span>
+        </button>
+      </div>
+    </div>
+  </div>
+
+  <script src="alarm.js"></script>
+</body>
+</html>

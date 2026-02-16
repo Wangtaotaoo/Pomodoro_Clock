@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title data-i18n="achievements_title">番茄钟 - 成就系统</title>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <link rel="stylesheet" href="themes.css">
+  <link rel="stylesheet" href="achievements.css">
+  <script src="i18n.js"></script>
+</head>
+<body>
+  <div class="achievements-container">
+    <div class="achievements-header">
+      <div class="header-left">
+        <span class="material-icons">emoji_events</span>
+        <h1 data-i18n="achievements_title">成就系统</h1>
+      </div>
+    </div>
+
+    <!-- Stats Overview -->
+    <section class="stats-overview">
+      <div class="overview-card">
+        <div class="overview-icon">
+          <span class="material-icons">stars</span>
+        </div>
+        <div class="overview-content">
+          <div class="overview-value" id="unlockedCount">0</div>
+          <div class="overview-label" data-i18n="achievements_unlocked">已解锁成就</div>
+        </div>
+      </div>
+      <div class="overview-card">
+        <div class="overview-icon">
+          <span class="material-icons">schedule</span>
+        </div>
+        <div class="overview-content">
+          <div class="overview-value" id="totalHours">0</div>
+          <div class="overview-label" data-i18n="achievements_total_hours">总专注时长（小时）</div>
+        </div>
+      </div>
+      <div class="overview-card">
+        <div class="overview-icon">
+          <span class="material-icons">local_fire_department</span>
+        </div>
+        <div class="overview-content">
+          <div class="overview-value" id="currentStreak">0</div>
+          <div class="overview-label" data-i18n="achievements_streak">连续天数</div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Achievements Grid -->
+    <section class="achievements-section">
+      <div class="section-header">
+        <h3 data-i18n="achievements_my_achievements">我的成就</h3>
+        <div class="progress-bar">
+          <div class="progress-fill" id="progressFill"></div>
+          <span class="progress-text" id="progressText">0/13</span>
+        </div>
+      </div>
+      <div class="achievements-grid" id="achievementsGrid"></div>
+    </section>
+
+    <!-- Recent Achievements -->
+    <section class="recent-section" id="recentSection" style="display: none;">
+      <h3 data-i18n="achievements_recent_unlocks">最近解锁</h3>
+      <div class="recent-list" id="recentList"></div>
+    </section>
+  </div>
+
+  <script src="achievements.js"></script>
+</body>
+</html>

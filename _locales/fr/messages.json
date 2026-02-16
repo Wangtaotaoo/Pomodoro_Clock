@@ -1,0 +1,704 @@
+{
+  "ext_name": {
+    "message": "Minuteur Pomodoro",
+    "description": "Extension name"
+  },
+  "ext_description": {
+    "message": "Minuteur pomodoro pour le travail concentré, avec cycles travail/pause, statistiques et rappels",
+    "description": "Extension description"
+  },
+  "cmd_start_pause": {
+    "message": "Démarrer ou mettre en pause le minuteur",
+    "description": "Keyboard shortcut description for start/pause"
+  },
+  "cmd_reset": {
+    "message": "Réinitialiser le minuteur",
+    "description": "Keyboard shortcut description for reset"
+  },
+
+  "app_title": {
+    "message": "Pomodoro",
+    "description": "Main app title"
+  },
+  "btn_settings": {
+    "message": "Paramètres",
+    "description": "Settings button title"
+  },
+
+  "phase_focus": {
+    "message": "Concentration",
+    "description": "Focus phase label"
+  },
+  "phase_short_break": {
+    "message": "Courte pause",
+    "description": "Short break phase label"
+  },
+  "phase_long_break": {
+    "message": "Longue pause",
+    "description": "Long break phase label"
+  },
+
+  "status_focus": {
+    "message": "En concentration...",
+    "description": "Focus status text"
+  },
+  "status_short_break": {
+    "message": "Courte pause...",
+    "description": "Short break status text"
+  },
+  "status_long_break": {
+    "message": "Longue pause...",
+    "description": "Long break status text"
+  },
+  "status_ready": {
+    "message": "Prêt à commencer",
+    "description": "Ready to start status"
+  },
+  "status_paused": {
+    "message": "En pause",
+    "description": "Paused status"
+  },
+  "status_waiting": {
+    "message": "En attente de continuation",
+    "description": "Waiting to continue status"
+  },
+  "status_timing": {
+    "message": "En cours...",
+    "description": "General timing status"
+  },
+
+  "cycles_completed": {
+    "message": "{0} pomodoros terminés",
+    "description": "Completed cycles text with placeholder"
+  },
+
+  "label_current_task": {
+    "message": "Tâche actuelle",
+    "description": "Current task label"
+  },
+  "placeholder_task": {
+    "message": "ex., Organiser le document des exigences",
+    "description": "Task input placeholder"
+  },
+  "label_focus_duration": {
+    "message": "Durée de concentration (minutes)",
+    "description": "Focus duration label"
+  },
+  "btn_minutes": {
+    "message": "{0} min",
+    "description": "Minutes button text"
+  },
+
+  "btn_start": {
+    "message": "Démarrer",
+    "description": "Start button text"
+  },
+  "btn_pause": {
+    "message": "Pause",
+    "description": "Pause button text"
+  },
+  "btn_resume": {
+    "message": "Reprendre",
+    "description": "Resume button text"
+  },
+  "btn_reset": {
+    "message": "Réinitialiser",
+    "description": "Reset button text"
+  },
+
+  "stat_today_pomodoros": {
+    "message": "Pomodoros aujourd'hui",
+    "description": "Today's pomodoros label"
+  },
+  "stat_today_minutes": {
+    "message": "Concentration aujourd'hui (min)",
+    "description": "Today's focus minutes label"
+  },
+  "stat_week_minutes": {
+    "message": "7 derniers jours (min)",
+    "description": "Week focus minutes label"
+  },
+
+  "action_stats": {
+    "message": "Statistiques",
+    "description": "Statistics action text"
+  },
+  "action_tasks": {
+    "message": "Tâches",
+    "description": "Tasks action text"
+  },
+  "action_achievements": {
+    "message": "Succès",
+    "description": "Achievements action text"
+  },
+  "btn_export": {
+    "message": "Exporter",
+    "description": "Export button text"
+  },
+
+  "task_edit_disabled_focus": {
+    "message": "Impossible de modifier la tâche pendant la concentration",
+    "description": "Task edit disabled during focus"
+  },
+  "task_edit_disabled_break": {
+    "message": "Impossible de modifier la tâche pendant la pause",
+    "description": "Task edit disabled during break"
+  },
+
+  "options_title": {
+    "message": "Paramètres Pomodoro",
+    "description": "Options page title"
+  },
+  "options_duration_settings": {
+    "message": "Paramètres de durée",
+    "description": "Duration settings section"
+  },
+  "options_focus_minutes": {
+    "message": "Concentration (minutes)",
+    "description": "Focus minutes setting"
+  },
+  "options_short_break": {
+    "message": "Courte pause (minutes)",
+    "description": "Short break setting"
+  },
+  "options_long_break": {
+    "message": "Longue pause (minutes)",
+    "description": "Long break setting"
+  },
+  "options_long_break_interval": {
+    "message": "Longue pause tous les N cycles",
+    "description": "Long break interval setting"
+  },
+
+  "options_behavior_settings": {
+    "message": "Paramètres de comportement",
+    "description": "Behavior settings section"
+  },
+  "options_auto_start_next": {
+    "message": "Démarrer automatiquement la phase suivante",
+    "description": "Auto start next setting"
+  },
+  "options_notification_enabled": {
+    "message": "Afficher les notifications système",
+    "description": "Notification enabled setting"
+  },
+  "options_open_alarm_page": {
+    "message": "Ouvrir la page d'alarme",
+    "description": "Open alarm page setting"
+  },
+  "options_sound_enabled": {
+    "message": "Activer le son sur la page d'alarme",
+    "description": "Sound enabled setting"
+  },
+
+  "options_appearance_settings": {
+    "message": "Paramètres d'apparence",
+    "description": "Appearance settings section"
+  },
+  "options_language": {
+    "message": "Langue",
+    "description": "Language setting label"
+  },
+  "options_theme_mode": {
+    "message": "Thème",
+    "description": "Theme mode label"
+  },
+  "options_theme_light": {
+    "message": "Clair",
+    "description": "Light theme option"
+  },
+  "options_theme_dark": {
+    "message": "Sombre",
+    "description": "Dark theme option"
+  },
+  "options_theme_auto": {
+    "message": "Système",
+    "description": "Auto theme option"
+  },
+
+  "options_site_blocking": {
+    "message": "Blocage de sites",
+    "description": "Site blocking section"
+  },
+  "options_block_sites_enabled": {
+    "message": "Bloquer les sites distrayants pendant la concentration",
+    "description": "Block sites enabled setting"
+  },
+  "options_blocked_sites_label": {
+    "message": "Sites bloqués (un par ligne, supporte les jokers *.example.com)",
+    "description": "Blocked sites label"
+  },
+  "options_blocked_sites_placeholder": {
+    "message": "facebook.com\ntwitter.com\n*.youtube.com",
+    "description": "Blocked sites textarea placeholder"
+  },
+  "options_blocked_sites_hint": {
+    "message": "Le blocage de sites nécessite des autorisations d'extension Chrome. Veuillez configurer les permissions dans les options de l'extension.",
+    "description": "Site blocking hint"
+  },
+
+  "btn_save_settings": {
+    "message": "Enregistrer les paramètres",
+    "description": "Save settings button"
+  },
+  "msg_saved": {
+    "message": "Enregistré",
+    "description": "Saved confirmation message"
+  },
+
+  "stats_title": {
+    "message": "Statistiques",
+    "description": "Statistics page title"
+  },
+  "stats_period_week": {
+    "message": "Semaine",
+    "description": "Week period selector"
+  },
+  "stats_period_month": {
+    "message": "Mois",
+    "description": "Month period selector"
+  },
+  "stats_period_year": {
+    "message": "Année",
+    "description": "Year period selector"
+  },
+
+  "stats_total_minutes": {
+    "message": "Temps de concentration total",
+    "description": "Total focus time label"
+  },
+  "stats_unit_minutes": {
+    "message": "minutes",
+    "description": "Minutes unit"
+  },
+  "stats_total_pomodoros": {
+    "message": "Pomodoros terminés",
+    "description": "Total pomodoros label"
+  },
+  "stats_unit_pomodoros": {
+    "message": "pomodoros",
+    "description": "Pomodoros unit"
+  },
+  "stats_current_streak": {
+    "message": "Série actuelle",
+    "description": "Current streak label"
+  },
+  "stats_unit_days": {
+    "message": "jours",
+    "description": "Days unit"
+  },
+
+  "stats_heatmap_title": {
+    "message": "Carte de concentration",
+    "description": "Heatmap section title"
+  },
+  "stats_heatmap_less": {
+    "message": "Moins",
+    "description": "Heatmap legend less"
+  },
+  "stats_heatmap_more": {
+    "message": "Plus",
+    "description": "Heatmap legend more"
+  },
+  "stats_heatmap_minutes": {
+    "message": "{0} : {1} minutes",
+    "description": "Heatmap cell tooltip"
+  },
+
+  "stats_trend_title": {
+    "message": "Tendance de concentration",
+    "description": "Trend chart title"
+  },
+  "stats_category_title": {
+    "message": "Distribution par catégorie",
+    "description": "Category chart title"
+  },
+  "stats_no_data": {
+    "message": "Aucune donnée",
+    "description": "No data message"
+  },
+  "stats_uncategorized": {
+    "message": "Non catégorisé",
+    "description": "Uncategorized label"
+  },
+
+  "stats_export_title": {
+    "message": "Exporter les données",
+    "description": "Export section title"
+  },
+
+  "day_mon": { "message": "Lun" },
+  "day_tue": { "message": "Mar" },
+  "day_wed": { "message": "Mer" },
+  "day_thu": { "message": "Jeu" },
+  "day_fri": { "message": "Ven" },
+  "day_sat": { "message": "Sam" },
+  "day_sun": { "message": "Dim" },
+
+  "month_1": { "message": "Jan" },
+  "month_2": { "message": "Fév" },
+  "month_3": { "message": "Mar" },
+  "month_4": { "message": "Avr" },
+  "month_5": { "message": "Mai" },
+  "month_6": { "message": "Jun" },
+  "month_7": { "message": "Jul" },
+  "month_8": { "message": "Aoû" },
+  "month_9": { "message": "Sep" },
+  "month_10": { "message": "Oct" },
+  "month_11": { "message": "Nov" },
+  "month_12": { "message": "Déc" },
+
+  "tasks_title": {
+    "message": "Gestion des tâches",
+    "description": "Tasks page title"
+  },
+  "btn_add_task": {
+    "message": "Ajouter une tâche",
+    "description": "Add task button"
+  },
+
+  "filter_category": {
+    "message": "Catégorie",
+    "description": "Category filter label"
+  },
+  "filter_status": {
+    "message": "Statut",
+    "description": "Status filter label"
+  },
+  "filter_all": {
+    "message": "Tous",
+    "description": "All filter option"
+  },
+  "filter_pending": {
+    "message": "En attente",
+    "description": "Pending status filter"
+  },
+  "filter_completed": {
+    "message": "Terminé",
+    "description": "Completed status filter"
+  },
+
+  "cat_work": { "message": "Travail" },
+  "cat_study": { "message": "Étude" },
+  "cat_reading": { "message": "Lecture" },
+  "cat_coding": { "message": "Programmation" },
+  "cat_writing": { "message": "Écriture" },
+  "cat_meeting": { "message": "Réunion" },
+  "cat_exercise": { "message": "Exercice" },
+  "cat_other": { "message": "Autre" },
+
+  "priority_high": { "message": "Haute" },
+  "priority_medium": { "message": "Moyenne" },
+  "priority_low": { "message": "Basse" },
+
+  "section_pinned_tasks": {
+    "message": "Tâches épinglées",
+    "description": "Pinned tasks section"
+  },
+  "section_task_list": {
+    "message": "Liste des tâches",
+    "description": "Task list section"
+  },
+
+  "empty_tasks_title": {
+    "message": "Aucune tâche",
+    "description": "Empty tasks title"
+  },
+  "empty_tasks_desc": {
+    "message": "Cliquez sur \"Ajouter une tâche\" pour créer votre première tâche",
+    "description": "Empty tasks description"
+  },
+
+  "modal_new_task": {
+    "message": "Nouvelle tâche",
+    "description": "New task modal title"
+  },
+  "modal_edit_task": {
+    "message": "Modifier la tâche",
+    "description": "Edit task modal title"
+  },
+
+  "label_task_name": {
+    "message": "Nom de la tâche",
+    "description": "Task name label"
+  },
+  "label_required": {
+    "message": "*",
+    "description": "Required field indicator"
+  },
+  "placeholder_task_name": {
+    "message": "ex., Terminer la documentation du projet",
+    "description": "Task name placeholder"
+  },
+  "label_task_description": {
+    "message": "Description",
+    "description": "Task description label"
+  },
+  "placeholder_task_description": {
+    "message": "Ajouter une description de la tâche...",
+    "description": "Task description placeholder"
+  },
+  "label_category": {
+    "message": "Catégorie",
+    "description": "Category label"
+  },
+  "label_priority": {
+    "message": "Priorité",
+    "description": "Priority label"
+  },
+  "label_estimated_time": {
+    "message": "Temps estimé (minutes)",
+    "description": "Estimated time label"
+  },
+  "placeholder_estimated_time": {
+    "message": "ex., 60",
+    "description": "Estimated time placeholder"
+  },
+
+  "btn_cancel": {
+    "message": "Annuler",
+    "description": "Cancel button"
+  },
+  "btn_save": {
+    "message": "Enregistrer",
+    "description": "Save button"
+  },
+
+  "action_start_focus": {
+    "message": "Démarrer la concentration",
+    "description": "Start focus action"
+  },
+  "action_edit": {
+    "message": "Modifier",
+    "description": "Edit action"
+  },
+  "action_pin": {
+    "message": "Épingler",
+    "description": "Pin action"
+  },
+  "action_unpin": {
+    "message": "Désépingler",
+    "description": "Unpin action"
+  },
+  "action_delete": {
+    "message": "Supprimer",
+    "description": "Delete action"
+  },
+
+  "confirm_delete_task": {
+    "message": "Êtes-vous sûr de vouloir supprimer cette tâche ?",
+    "description": "Delete task confirmation"
+  },
+
+  "achievements_title": {
+    "message": "Succès",
+    "description": "Achievements page title"
+  },
+  "achievements_unlocked": {
+    "message": "Succès débloqués",
+    "description": "Unlocked achievements label"
+  },
+  "achievements_total_hours": {
+    "message": "Heures de concentration totales",
+    "description": "Total focus hours label"
+  },
+  "achievements_streak": {
+    "message": "Série actuelle",
+    "description": "Achievement streak label"
+  },
+  "achievements_my_achievements": {
+    "message": "Mes succès",
+    "description": "My achievements section"
+  },
+  "achievements_recent_unlocks": {
+    "message": "Déblocages récents",
+    "description": "Recent unlocks section"
+  },
+  "achievements_unlocked_badge": {
+    "message": "Débloqué",
+    "description": "Unlocked badge text"
+  },
+
+  "ach_first_pomodoro_name": { "message": "Premiers pas" },
+  "ach_first_pomodoro_desc": { "message": "Terminer votre premier pomodoro" },
+  "ach_daily_goal_name": { "message": "Progrès quotidien" },
+  "ach_daily_goal_desc": { "message": "Atteindre l'objectif quotidien (120 minutes)" },
+  "ach_week_goal_name": { "message": "Cohérence" },
+  "ach_week_goal_desc": { "message": "Atteindre l'objectif hebdomadaire (720 minutes)" },
+  "ach_streak_3_name": { "message": "Triple menace" },
+  "ach_streak_3_desc": { "message": "Série de 3 jours atteignant les objectifs" },
+  "ach_streak_7_name": { "message": "Guerrier de la semaine" },
+  "ach_streak_7_desc": { "message": "Série de 7 jours atteignant les objectifs" },
+  "ach_streak_30_name": { "message": "Maître mensuel" },
+  "ach_streak_30_desc": { "message": "Série de 30 jours atteignant les objectifs" },
+  "ach_focus_100_name": { "message": "Centenaire" },
+  "ach_focus_100_desc": { "message": "100 heures de concentration totale" },
+  "ach_focus_500_name": { "message": "Maître de la concentration" },
+  "ach_focus_500_desc": { "message": "500 heures de concentration totale" },
+  "ach_early_bird_name": { "message": "Lève-tôt" },
+  "ach_early_bird_desc": { "message": "Terminer un pomodoro avant 8h" },
+  "ach_night_owl_name": { "message": "Oiseau de nuit" },
+  "ach_night_owl_desc": { "message": "Terminer un pomodoro après 22h" },
+  "ach_speed_demon_name": { "message": "Démon de vitesse" },
+  "ach_speed_demon_desc": { "message": "Terminer 8 pomodoros en un jour" },
+  "ach_marathon_name": { "message": "Marathon" },
+  "ach_marathon_desc": { "message": "Se concentrer 4+ heures en un jour" },
+  "ach_perfectionist_name": { "message": "Perfectionniste" },
+  "ach_perfectionist_desc": { "message": "Terminer 7 pomodoros consécutifs" },
+
+  "notification_achievement_unlocked": {
+    "message": "Succès débloqué !",
+    "description": "Achievement unlocked notification title"
+  },
+  "notification_pomodoro": {
+    "message": "Pomodoro",
+    "description": "Pomodoro notification title"
+  },
+  "notification_focus_complete": {
+    "message": "Temps de concentration terminé, faites une pause !",
+    "description": "Focus complete message"
+  },
+  "notification_focus_complete_long": {
+    "message": "Cycle de concentration terminé, temps pour une longue pause.",
+    "description": "Focus complete with long break message"
+  },
+  "notification_break_complete": {
+    "message": "Pause terminée, commencez votre prochaine session de concentration.",
+    "description": "Break complete message"
+  },
+
+  "alarm_title": {
+    "message": "Le temps est écoulé !",
+    "description": "Alarm page title"
+  },
+  "alarm_focus_complete": {
+    "message": "Concentration terminée, faites une pause",
+    "description": "Focus complete subtitle"
+  },
+  "alarm_break_complete": {
+    "message": "Pause terminée, prêt pour le prochain cycle",
+    "description": "Break complete subtitle"
+  },
+  "alarm_phase_ended": {
+    "message": "Phase actuelle terminée",
+    "description": "Phase ended message"
+  },
+  "alarm_next_step": {
+    "message": "Prochaine étape",
+    "description": "Next step label"
+  },
+  "alarm_start_directly": {
+    "message": "Vous pouvez directement démarrer une nouvelle session de concentration.",
+    "description": "Start directly message"
+  },
+  "alarm_next_phase_suggestion": {
+    "message": "Vous venez de terminer une session {0}, prochaine phase : {1}.",
+    "description": "Next phase suggestion with placeholders"
+  },
+  "alarm_break_complete_suggestion": {
+    "message": "Pause terminée, temps pour la prochaine session de concentration.",
+    "description": "Break complete suggestion"
+  },
+  "alarm_auto_continue": {
+    "message": "Continuation automatique activée, prochaine phase déjà en cours.",
+    "description": "Auto continue message"
+  },
+  "btn_start_next_phase": {
+    "message": "Démarrer la phase suivante",
+    "description": "Start next phase button"
+  },
+  "btn_start_focus": {
+    "message": "Démarrer la concentration",
+    "description": "Start focus button"
+  },
+  "btn_start_phase": {
+    "message": "Démarrer {0}",
+    "description": "Start phase button with placeholder"
+  },
+  "btn_extend_5min": {
+    "message": "Prolonger de 5 minutes",
+    "description": "Extend 5 minutes button"
+  },
+  "btn_skip_break": {
+    "message": "Passer la pause, démarrer la concentration",
+    "description": "Skip break button"
+  },
+  "btn_got_it": {
+    "message": "Compris",
+    "description": "Got it button"
+  },
+
+  "quote_1": { "message": "Le repos permet de parcourir un plus long chemin" },
+  "quote_2": { "message": "La concentration est la clé du succès" },
+  "quote_3": { "message": "Le temps, c'est de l'argent" },
+  "quote_4": { "message": "Le succès, c'est progresser chaque jour" },
+  "quote_5": { "message": "Le temps est comme l'eau dans une éponge, il y en a toujours si on presse" },
+  "quote_author_5": { "message": "Lu Xun" },
+  "quote_6": { "message": "L'excellence vient de l'assiduité, se perd dans les divertissements" },
+  "quote_author_6": { "message": "Han Yu" },
+  "quote_7": { "message": "Un voyage de mille lieues commence par un pas" },
+  "quote_author_7": { "message": "Laozi" },
+  "quote_8": { "message": "Les petits pas mènent à mille lieues" },
+  "quote_author_8": { "message": "Xunzi" },
+  "quote_author_anon": { "message": "Anonyme" },
+
+  "blocked_title": {
+    "message": "Mode concentration actif",
+    "description": "Blocked page title"
+  },
+  "blocked_message": {
+    "message": "Ce site est temporairement bloqué. Veuillez vous concentrer sur votre tâche actuelle.",
+    "description": "Blocked page message"
+  },
+  "blocked_current_site": {
+    "message": "Site actuel",
+    "description": "Current site label"
+  },
+  "blocked_unknown_site": {
+    "message": "Site inconnu",
+    "description": "Unknown site text"
+  },
+  "blocked_not_focusing": {
+    "message": "Pas en mode concentration",
+    "description": "Not focusing status"
+  },
+  "btn_temp_access": {
+    "message": "Accès temporaire (5 min)",
+    "description": "Temporary access button"
+  },
+  "btn_end_focus_access": {
+    "message": "Terminer la concentration, autoriser l'accès",
+    "description": "End focus and allow access button"
+  },
+
+  "menu_toggle": {
+    "message": "Pomodoro : Démarrer/Pause",
+    "description": "Context menu toggle"
+  },
+  "menu_reset": {
+    "message": "Pomodoro : Réinitialiser",
+    "description": "Context menu reset"
+  },
+
+  "error_start_timer": { "message": "Échec du démarrage du minuteur :" },
+  "error_pause_timer": { "message": "Échec de la mise en pause du minuteur :" },
+  "error_reset_timer": { "message": "Échec de la réinitialisation du minuteur :" },
+  "error_load_state": { "message": "Échec du chargement de l'état :" },
+  "error_save_settings": { "message": "Échec de l'enregistrement des paramètres :" },
+  "error_load_settings": { "message": "Échec du chargement des paramètres :" },
+  "error_load_stats": { "message": "Échec du chargement des statistiques :" },
+  "error_load_tasks": { "message": "Échec du chargement des tâches :" },
+  "error_load_achievements": { "message": "Échec du chargement des succès :" },
+  "error_init_alarm": { "message": "Échec de l'initialisation de la page d'alarme :" },
+  "error_start_next": { "message": "Échec du démarrage de la phase suivante :" },
+  "error_extend": { "message": "Échec de la prolongation :" },
+  "error_skip_break": { "message": "Échec du passage de la pause :" },
+  "error_check_achievements": { "message": "Échec de la vérification des succès :" },
+  "error_init": { "message": "Échec de l'initialisation Pomodoro :" },
+  "error_startup": { "message": "Échec de la récupération au démarrage Pomodoro :" },
+  "error_timer_complete": { "message": "Échec du traitement de la fin du minuteur :" },
+  "error_shortcut_toggle": { "message": "Échec du raccourci démarrer/pause :" },
+  "error_shortcut_reset": { "message": "Échec du raccourci réinitialiser :" },
+  "error_menu_toggle": { "message": "Échec du menu démarrer/pause :" },
+  "error_menu_reset": { "message": "Échec du menu réinitialiser :" }
+}

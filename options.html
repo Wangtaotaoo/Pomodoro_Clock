@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title data-i18n="options_title">番茄钟设置</title>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="themes.css">
+  <link rel="stylesheet" href="options.css">
+  <script src="i18n.js"></script>
+</head>
+<body>
+  <div class="wrap">
+    <h1 data-i18n="options_title">番茄钟设置</h1>
+
+    <section class="card">
+      <h2 data-i18n="options_appearance_settings">外观设置</h2>
+
+      <div class="setting-row">
+        <label data-i18n="options_language">语言 / Language</label>
+        <div class="language-selector">
+          <button class="lang-option" data-locale="zh_CN">中文</button>
+          <button class="lang-option" data-locale="en">English</button>
+          <button class="lang-option" data-locale="ru">Русский</button>
+          <button class="lang-option" data-locale="fr">Français</button>
+        </div>
+      </div>
+
+      <div class="setting-row">
+        <label data-i18n="options_theme_mode">主题模式</label>
+        <div class="theme-selector">
+          <button class="theme-option" data-theme="light" data-i18n="options_theme_light">浅色</button>
+          <button class="theme-option" data-theme="dark" data-i18n="options_theme_dark">深色</button>
+          <button class="theme-option" data-theme="auto" data-i18n="options_theme_auto">跟随系统</button>
+        </div>
+      </div>
+    </section>
+
+    <section class="card">
+      <h2 data-i18n="options_duration_settings">时长设置</h2>
+      <div class="grid">
+        <label data-i18n="options_focus_minutes">专注时长（分钟）<input id="focusMinutes" type="number" min="1" max="180"></label>
+        <label data-i18n="options_short_break">短休息（分钟）<input id="shortBreakMinutes" type="number" min="1" max="60"></label>
+        <label data-i18n="options_long_break">长休息（分钟）<input id="longBreakMinutes" type="number" min="1" max="90"></label>
+        <label data-i18n="options_long_break_interval">每几轮一次长休息<input id="longBreakInterval" type="number" min="2" max="8"></label>
+      </div>
+    </section>
+
+    <section class="card">
+      <h2 data-i18n="options_behavior_settings">行为设置</h2>
+      <label class="check"><input id="autoStartNext" type="checkbox"><span data-i18n="options_auto_start_next">倒计时结束后自动开始下一阶段</span></label>
+      <label class="check"><input id="notificationEnabled" type="checkbox"><span data-i18n="options_notification_enabled">显示系统通知</span></label>
+      <label class="check"><input id="openAlarmPage" type="checkbox"><span data-i18n="options_open_alarm_page">打开提醒页面</span></label>
+      <label class="check"><input id="soundEnabled" type="checkbox"><span data-i18n="options_sound_enabled">提醒页面启用提示音</span></label>
+    </section>
+
+    <section class="card">
+      <h2 data-i18n="options_site_blocking">网站阻止</h2>
+      <label class="check"><input id="blockSitesEnabled" type="checkbox"><span data-i18n="options_block_sites_enabled">专注期间阻止干扰网站</span></label>
+      <label style="margin-top: 12px;" data-i18n="options_blocked_sites_label">阻止的网站（每行一个，支持通配符 *.example.com）
+        <textarea id="blockedSites" rows="5" data-i18n-placeholder="options_blocked_sites_placeholder"></textarea>
+      </label>
+      <p class="hint" data-i18n="options_blocked_sites_hint">网站阻止需要配合Chrome扩展使用，请在扩展选项中设置内容脚本权限</p>
+    </section>
+
+    <div class="actions">
+      <button id="saveBtn" data-i18n="btn_save_settings">保存设置</button>
+      <span id="status"></span>
+    </div>
+  </div>
+
+  <script src="options.js"></script>
+</body>
+</html>

@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title data-i18n="app_title">番茄钟</title>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <link rel="stylesheet" href="themes.css">
+  <link rel="stylesheet" href="popup.css">
+</head>
+<body>
+  <div class="container">
+    <div class="header">
+      <div class="header-left">
+        <span class="material-icons">timer</span>
+        <h1 data-i18n="app_title">番茄钟</h1>
+      </div>
+      <button class="icon-btn" id="openOptionsBtn" data-i18n-title="btn_settings">
+        <span class="material-icons">settings</span>
+      </button>
+    </div>
+
+    <div class="phase-row">
+      <span class="phase-badge" id="phaseLabel">专注</span>
+      <span class="cycle-text" id="cycleText">已完成 0 个番茄</span>
+    </div>
+
+    <div class="timer-display">
+      <div class="time-value" id="timeDisplay">25:00</div>
+      <div class="timer-ring">
+        <svg class="progress-ring" width="200" height="200">
+          <circle class="progress-ring__circle-bg" stroke-width="8" fill="transparent" r="88" cx="100" cy="100" />
+          <circle class="progress-ring__circle" stroke-width="8" fill="transparent" r="88" cx="100" cy="100" id="progressCircle" />
+        </svg>
+      </div>
+    </div>
+
+    <div class="task-section">
+      <label for="taskInput" data-i18n="label_current_task">当前任务</label>
+      <input type="text" id="taskInput" data-i18n-placeholder="placeholder_task">
+    </div>
+
+    <div class="time-input-section" id="timeInputSection">
+      <label for="minutesInput" data-i18n="label_focus_duration">专注时长（分钟）</label>
+      <div class="input-wrapper">
+        <span class="material-icons input-icon">schedule</span>
+        <input type="number" id="minutesInput" min="1" max="120" value="25">
+      </div>
+      <div class="quick-select">
+        <button class="quick-btn" data-time="25">25分钟</button>
+        <button class="quick-btn" data-time="40">40分钟</button>
+        <button class="quick-btn" data-time="60">60分钟</button>
+      </div>
+    </div>
+
+    <div class="status" id="status">准备开始</div>
+
+    <div class="buttons">
+      <button class="btn btn-primary" id="startBtn">
+        <span class="material-icons">play_arrow</span>
+        <span data-i18n="btn_start">开始</span>
+      </button>
+      <button class="btn btn-secondary" id="pauseBtn" style="display: none;">
+        <span class="material-icons">pause</span>
+        <span data-i18n="btn_pause">暂停</span>
+      </button>
+      <button class="btn btn-tertiary" id="resetBtn">
+        <span class="material-icons">refresh</span>
+        <span data-i18n="btn_reset">重置</span>
+      </button>
+    </div>
+
+    <div class="stats">
+      <div class="stat-card">
+        <div class="stat-label" data-i18n="stat_today_pomodoros">今日番茄</div>
+        <div class="stat-value" id="todayPomodoros">0</div>
+      </div>
+      <div class="stat-card">
+        <div class="stat-label" data-i18n="stat_today_minutes">今日专注(分)</div>
+        <div class="stat-value" id="todayMinutes">0</div>
+      </div>
+      <div class="stat-card">
+        <div class="stat-label" data-i18n="stat_week_minutes">近7天专注(分)</div>
+        <div class="stat-value" id="weekMinutes">0</div>
+      </div>
+    </div>
+
+    <div class="quick-actions">
+      <button class="action-btn" id="openStatsBtn">
+        <span class="material-icons">bar_chart</span>
+        <span data-i18n="action_stats">数据统计</span>
+      </button>
+      <button class="action-btn" id="openTasksBtn">
+        <span class="material-icons">checklist</span>
+        <span data-i18n="action_tasks">任务管理</span>
+      </button>
+      <button class="action-btn" id="openAchievementsBtn">
+        <span class="material-icons">emoji_events</span>
+        <span data-i18n="action_achievements">成就</span>
+      </button>
+      <div class="export-dropdown">
+        <button class="export-btn" id="exportBtn" data-i18n="btn_export">导出</button>
+        <div class="export-menu" id="exportMenu">
+          <button class="export-menu-item" data-format="csv">CSV</button>
+          <button class="export-menu-item" data-format="json">JSON</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <script src="i18n.js"></script>
+  <script src="popup.js"></script>
+</body>
+</html>

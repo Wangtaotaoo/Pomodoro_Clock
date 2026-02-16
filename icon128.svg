@@ -1,0 +1,42 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="128" height="128" viewBox="0 0 128 128">
+  <defs>
+    <radialGradient id="tomatoGradient" cx="30%" cy="30%">
+      <stop offset="0%" style="stop-color:#FF6B9D"/>
+      <stop offset="100%" style="stop-color:#C2185B"/>
+    </radialGradient>
+    <filter id="shadow">
+      <feDropShadow dx="0" dy="4" stdDeviation="4" flood-opacity="0.3"/>
+    </filter>
+  </defs>
+  <!-- Tomato body -->
+  <ellipse cx="64" cy="72" rx="48" ry="48" fill="url(#tomatoGradient)" filter="url(#shadow)"/>
+  <!-- Highlight -->
+  <ellipse cx="48" cy="52" rx="15" ry="15" fill="rgba(255,255,255,0.2)"/>
+
+  <!-- Clock face (white circle inside tomato) -->
+  <circle cx="64" cy="72" r="32" fill="#FFFFFF"/>
+  <circle cx="64" cy="72" r="28" fill="none" stroke="#E91E63" stroke-width="2"/>
+
+  <!-- Clock hour markers -->
+  <g stroke="#333" stroke-width="2" stroke-linecap="round">
+    <line x1="64" y1="46" x2="64" y2="50"/>
+    <line x1="64" y1="94" x2="64" y2="98"/>
+    <line x1="38" y1="72" x2="42" y2="72"/>
+    <line x1="86" y1="72" x2="90" y2="72"/>
+  </g>
+
+  <!-- Hour hand (pointing at 10 o'clock position) -->
+  <line x1="64" y1="72" x2="52" y2="60" stroke="#C2185B" stroke-width="4" stroke-linecap="round"/>
+
+  <!-- Minute hand (pointing at 2 o'clock position - 25 minutes) -->
+  <line x1="64" y1="72" x2="78" y2="58" stroke="#C2185B" stroke-width="3" stroke-linecap="round"/>
+
+  <!-- Clock center dot -->
+  <circle cx="64" cy="72" r="4" fill="#C2185B"/>
+
+  <!-- Stem and leaves on top of tomato -->
+  <path d="M64 24 L74 14 L54 14 Z" fill="#4CAF50"/>
+  <path d="M54 14 Q36 18 44 30 Z" fill="#4CAF50"/>
+  <path d="M74 14 Q92 18 84 30 Z" fill="#4CAF50"/>
+  <path d="M64 24 L72 12 L56 12 Z" fill="#66BB6A"/>
+</svg>

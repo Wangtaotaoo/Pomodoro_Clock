@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title data-i18n="stats_title">番茄钟 - 数据统计</title>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <link rel="stylesheet" href="themes.css">
+  <link rel="stylesheet" href="stats.css">
+  <script src="i18n.js"></script>
+</head>
+<body>
+  <div class="stats-container">
+    <div class="stats-header">
+      <div class="header-left">
+        <span class="material-icons">bar_chart</span>
+        <h1 data-i18n="stats_title">数据统计</h1>
+      </div>
+      <div class="period-selector">
+        <button class="period-btn" data-period="week" data-i18n="stats_period_week">周</button>
+        <button class="period-btn active" data-period="month" data-i18n="stats_period_month">月</button>
+        <button class="period-btn" data-period="year" data-i18n="stats_period_year">年</button>
+      </div>
+    </div>
+
+    <!-- Summary Cards -->
+    <section class="summary-section">
+      <div class="summary-card">
+        <div class="summary-icon" style="background: #e3f2fd;">
+          <span class="material-icons">today</span>
+        </div>
+        <div class="summary-content">
+          <div class="summary-label" data-i18n="stats_total_minutes">总专注时长</div>
+          <div class="summary-value" id="totalMinutes">0</div>
+          <div class="summary-unit" data-i18n="stats_unit_minutes">分钟</div>
+        </div>
+      </div>
+      <div class="summary-card">
+        <div class="summary-icon" style="background: #fce4ec;">
+          <span class="material-icons">timer</span>
+        </div>
+        <div class="summary-content">
+          <div class="summary-label" data-i18n="stats_total_pomodoros">完成番茄数</div>
+          <div class="summary-value" id="totalPomodoros">0</div>
+          <div class="summary-unit" data-i18n="stats_unit_pomodoros">个</div>
+        </div>
+      </div>
+      <div class="summary-card">
+        <div class="summary-icon" style="background: #fff3e0;">
+          <span class="material-icons">local_fire_department</span>
+        </div>
+        <div class="summary-content">
+          <div class="summary-label" data-i18n="stats_current_streak">连续天数</div>
+          <div class="summary-value" id="currentStreak">0</div>
+          <div class="summary-unit" data-i18n="stats_unit_days">天</div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Heatmap Section -->
+    <section class="chart-section">
+      <h3 data-i18n="stats_heatmap_title">专注热力图</h3>
+      <div class="heatmap-container">
+        <div class="heatmap-month" id="heatmapMonth"></div>
+        <div class="heatmap-grid" id="heatmap"></div>
+        <div class="heatmap-legend">
+          <span class="legend-item" data-i18n="stats_heatmap_less">少</span>
+          <div class="legend-colors">
+            <span class="legend-color" data-level="0"></span>
+            <span class="legend-color" data-level="1"></span>
+            <span class="legend-color" data-level="2"></span>
+            <span class="legend-color" data-level="3"></span>
+            <span class="legend-color" data-level="4"></span>
+          </div>
+          <span class="legend-item" data-i18n="stats_heatmap_more">多</span>
+        </div>
+      </div>
+    </section>
+
+    <!-- Trend Chart Section -->
+    <section class="chart-section">
+      <h3 data-i18n="stats_trend_title">专注趋势</h3>
+      <div class="chart-container">
+        <canvas id="trendChart"></canvas>
+      </div>
+    </section>
+
+    <!-- Category Distribution Section -->
+    <section class="chart-section">
+      <h3 data-i18n="stats_category_title">任务分类分布</h3>
+      <div class="chart-container">
+        <canvas id="categoryChart"></canvas>
+      </div>
+    </section>
+
+    <!-- Export Section -->
+    <section class="export-section">
+      <h3 data-i18n="stats_export_title">导出数据</h3>
+      <div class="export-buttons">
+        <button class="export-btn" id="exportCSV">CSV</button>
+        <button class="export-btn" id="exportJSON">JSON</button>
+      </div>
+    </section>
+  </div>
+
+  <script src="stats.js"></script>
+</body>
+</html>

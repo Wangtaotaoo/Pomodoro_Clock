@@ -1,0 +1,704 @@
+{
+  "ext_name": {
+    "message": "番茄钟倒计时",
+    "description": "Extension name"
+  },
+  "ext_description": {
+    "message": "专注工作的番茄钟计时器，支持工作/休息循环、统计与提醒",
+    "description": "Extension description"
+  },
+  "cmd_start_pause": {
+    "message": "开始或暂停计时",
+    "description": "Keyboard shortcut description for start/pause"
+  },
+  "cmd_reset": {
+    "message": "重置计时",
+    "description": "Keyboard shortcut description for reset"
+  },
+
+  "app_title": {
+    "message": "番茄钟",
+    "description": "Main app title"
+  },
+  "btn_settings": {
+    "message": "设置",
+    "description": "Settings button title"
+  },
+
+  "phase_focus": {
+    "message": "专注",
+    "description": "Focus phase label"
+  },
+  "phase_short_break": {
+    "message": "短休息",
+    "description": "Short break phase label"
+  },
+  "phase_long_break": {
+    "message": "长休息",
+    "description": "Long break phase label"
+  },
+
+  "status_focus": {
+    "message": "专注中...",
+    "description": "Focus status text"
+  },
+  "status_short_break": {
+    "message": "短休息中...",
+    "description": "Short break status text"
+  },
+  "status_long_break": {
+    "message": "长休息中...",
+    "description": "Long break status text"
+  },
+  "status_ready": {
+    "message": "准备开始",
+    "description": "Ready to start status"
+  },
+  "status_paused": {
+    "message": "已暂停",
+    "description": "Paused status"
+  },
+  "status_waiting": {
+    "message": "等待继续",
+    "description": "Waiting to continue status"
+  },
+  "status_timing": {
+    "message": "计时中...",
+    "description": "General timing status"
+  },
+
+  "cycles_completed": {
+    "message": "已完成 {0} 个番茄",
+    "description": "Completed cycles text with placeholder"
+  },
+
+  "label_current_task": {
+    "message": "当前任务",
+    "description": "Current task label"
+  },
+  "placeholder_task": {
+    "message": "例如：整理需求文档",
+    "description": "Task input placeholder"
+  },
+  "label_focus_duration": {
+    "message": "专注时长（分钟）",
+    "description": "Focus duration label"
+  },
+  "btn_minutes": {
+    "message": "{0}分钟",
+    "description": "Minutes button text"
+  },
+
+  "btn_start": {
+    "message": "开始",
+    "description": "Start button text"
+  },
+  "btn_pause": {
+    "message": "暂停",
+    "description": "Pause button text"
+  },
+  "btn_resume": {
+    "message": "继续",
+    "description": "Resume button text"
+  },
+  "btn_reset": {
+    "message": "重置",
+    "description": "Reset button text"
+  },
+
+  "stat_today_pomodoros": {
+    "message": "今日番茄",
+    "description": "Today's pomodoros label"
+  },
+  "stat_today_minutes": {
+    "message": "今日专注(分)",
+    "description": "Today's focus minutes label"
+  },
+  "stat_week_minutes": {
+    "message": "近7天专注(分)",
+    "description": "Week focus minutes label"
+  },
+
+  "action_stats": {
+    "message": "数据统计",
+    "description": "Statistics action text"
+  },
+  "action_tasks": {
+    "message": "任务管理",
+    "description": "Tasks action text"
+  },
+  "action_achievements": {
+    "message": "成就",
+    "description": "Achievements action text"
+  },
+  "btn_export": {
+    "message": "导出",
+    "description": "Export button text"
+  },
+
+  "task_edit_disabled_focus": {
+    "message": "专注中不可编辑任务",
+    "description": "Task edit disabled during focus"
+  },
+  "task_edit_disabled_break": {
+    "message": "休息阶段不可编辑任务",
+    "description": "Task edit disabled during break"
+  },
+
+  "options_title": {
+    "message": "番茄钟设置",
+    "description": "Options page title"
+  },
+  "options_duration_settings": {
+    "message": "时长设置",
+    "description": "Duration settings section"
+  },
+  "options_focus_minutes": {
+    "message": "专注时长（分钟）",
+    "description": "Focus minutes setting"
+  },
+  "options_short_break": {
+    "message": "短休息（分钟）",
+    "description": "Short break setting"
+  },
+  "options_long_break": {
+    "message": "长休息（分钟）",
+    "description": "Long break setting"
+  },
+  "options_long_break_interval": {
+    "message": "每几轮一次长休息",
+    "description": "Long break interval setting"
+  },
+
+  "options_behavior_settings": {
+    "message": "行为设置",
+    "description": "Behavior settings section"
+  },
+  "options_auto_start_next": {
+    "message": "倒计时结束后自动开始下一阶段",
+    "description": "Auto start next setting"
+  },
+  "options_notification_enabled": {
+    "message": "显示系统通知",
+    "description": "Notification enabled setting"
+  },
+  "options_open_alarm_page": {
+    "message": "打开提醒页面",
+    "description": "Open alarm page setting"
+  },
+  "options_sound_enabled": {
+    "message": "提醒页面启用提示音",
+    "description": "Sound enabled setting"
+  },
+
+  "options_appearance_settings": {
+    "message": "外观设置",
+    "description": "Appearance settings section"
+  },
+  "options_language": {
+    "message": "语言 / Language",
+    "description": "Language setting label"
+  },
+  "options_theme_mode": {
+    "message": "主题模式",
+    "description": "Theme mode label"
+  },
+  "options_theme_light": {
+    "message": "浅色",
+    "description": "Light theme option"
+  },
+  "options_theme_dark": {
+    "message": "深色",
+    "description": "Dark theme option"
+  },
+  "options_theme_auto": {
+    "message": "跟随系统",
+    "description": "Auto theme option"
+  },
+
+  "options_site_blocking": {
+    "message": "网站阻止",
+    "description": "Site blocking section"
+  },
+  "options_block_sites_enabled": {
+    "message": "专注期间阻止干扰网站",
+    "description": "Block sites enabled setting"
+  },
+  "options_blocked_sites_label": {
+    "message": "阻止的网站（每行一个，支持通配符 *.example.com）",
+    "description": "Blocked sites label"
+  },
+  "options_blocked_sites_placeholder": {
+    "message": "facebook.com\ntwitter.com\n*.youtube.com",
+    "description": "Blocked sites textarea placeholder"
+  },
+  "options_blocked_sites_hint": {
+    "message": "网站阻止需要配合Chrome扩展使用，请在扩展选项中设置内容脚本权限",
+    "description": "Site blocking hint"
+  },
+
+  "btn_save_settings": {
+    "message": "保存设置",
+    "description": "Save settings button"
+  },
+  "msg_saved": {
+    "message": "已保存",
+    "description": "Saved confirmation message"
+  },
+
+  "stats_title": {
+    "message": "数据统计",
+    "description": "Statistics page title"
+  },
+  "stats_period_week": {
+    "message": "周",
+    "description": "Week period selector"
+  },
+  "stats_period_month": {
+    "message": "月",
+    "description": "Month period selector"
+  },
+  "stats_period_year": {
+    "message": "年",
+    "description": "Year period selector"
+  },
+
+  "stats_total_minutes": {
+    "message": "总专注时长",
+    "description": "Total focus time label"
+  },
+  "stats_unit_minutes": {
+    "message": "分钟",
+    "description": "Minutes unit"
+  },
+  "stats_total_pomodoros": {
+    "message": "完成番茄数",
+    "description": "Total pomodoros label"
+  },
+  "stats_unit_pomodoros": {
+    "message": "个",
+    "description": "Pomodoros unit"
+  },
+  "stats_current_streak": {
+    "message": "连续天数",
+    "description": "Current streak label"
+  },
+  "stats_unit_days": {
+    "message": "天",
+    "description": "Days unit"
+  },
+
+  "stats_heatmap_title": {
+    "message": "专注热力图",
+    "description": "Heatmap section title"
+  },
+  "stats_heatmap_less": {
+    "message": "少",
+    "description": "Heatmap legend less"
+  },
+  "stats_heatmap_more": {
+    "message": "多",
+    "description": "Heatmap legend more"
+  },
+  "stats_heatmap_minutes": {
+    "message": "{0}: {1} 分钟",
+    "description": "Heatmap cell tooltip"
+  },
+
+  "stats_trend_title": {
+    "message": "专注趋势",
+    "description": "Trend chart title"
+  },
+  "stats_category_title": {
+    "message": "任务分类分布",
+    "description": "Category chart title"
+  },
+  "stats_no_data": {
+    "message": "暂无数据",
+    "description": "No data message"
+  },
+  "stats_uncategorized": {
+    "message": "未分类",
+    "description": "Uncategorized label"
+  },
+
+  "stats_export_title": {
+    "message": "导出数据",
+    "description": "Export section title"
+  },
+
+  "day_mon": { "message": "周一" },
+  "day_tue": { "message": "周二" },
+  "day_wed": { "message": "周三" },
+  "day_thu": { "message": "周四" },
+  "day_fri": { "message": "周五" },
+  "day_sat": { "message": "周六" },
+  "day_sun": { "message": "周日" },
+
+  "month_1": { "message": "1月" },
+  "month_2": { "message": "2月" },
+  "month_3": { "message": "3月" },
+  "month_4": { "message": "4月" },
+  "month_5": { "message": "5月" },
+  "month_6": { "message": "6月" },
+  "month_7": { "message": "7月" },
+  "month_8": { "message": "8月" },
+  "month_9": { "message": "9月" },
+  "month_10": { "message": "10月" },
+  "month_11": { "message": "11月" },
+  "month_12": { "message": "12月" },
+
+  "tasks_title": {
+    "message": "任务管理",
+    "description": "Tasks page title"
+  },
+  "btn_add_task": {
+    "message": "新建任务",
+    "description": "Add task button"
+  },
+
+  "filter_category": {
+    "message": "分类",
+    "description": "Category filter label"
+  },
+  "filter_status": {
+    "message": "状态",
+    "description": "Status filter label"
+  },
+  "filter_all": {
+    "message": "全部",
+    "description": "All filter option"
+  },
+  "filter_pending": {
+    "message": "待完成",
+    "description": "Pending status filter"
+  },
+  "filter_completed": {
+    "message": "已完成",
+    "description": "Completed status filter"
+  },
+
+  "cat_work": { "message": "工作" },
+  "cat_study": { "message": "学习" },
+  "cat_reading": { "message": "阅读" },
+  "cat_coding": { "message": "编程" },
+  "cat_writing": { "message": "写作" },
+  "cat_meeting": { "message": "会议" },
+  "cat_exercise": { "message": "运动" },
+  "cat_other": { "message": "其他" },
+
+  "priority_high": { "message": "高" },
+  "priority_medium": { "message": "中" },
+  "priority_low": { "message": "低" },
+
+  "section_pinned_tasks": {
+    "message": "置顶任务",
+    "description": "Pinned tasks section"
+  },
+  "section_task_list": {
+    "message": "任务列表",
+    "description": "Task list section"
+  },
+
+  "empty_tasks_title": {
+    "message": "暂无任务",
+    "description": "Empty tasks title"
+  },
+  "empty_tasks_desc": {
+    "message": "点击\"新建任务\"开始添加您的第一个任务",
+    "description": "Empty tasks description"
+  },
+
+  "modal_new_task": {
+    "message": "新建任务",
+    "description": "New task modal title"
+  },
+  "modal_edit_task": {
+    "message": "编辑任务",
+    "description": "Edit task modal title"
+  },
+
+  "label_task_name": {
+    "message": "任务名称",
+    "description": "Task name label"
+  },
+  "label_required": {
+    "message": "*",
+    "description": "Required field indicator"
+  },
+  "placeholder_task_name": {
+    "message": "例如：完成项目文档",
+    "description": "Task name placeholder"
+  },
+  "label_task_description": {
+    "message": "任务描述",
+    "description": "Task description label"
+  },
+  "placeholder_task_description": {
+    "message": "添加任务的详细描述...",
+    "description": "Task description placeholder"
+  },
+  "label_category": {
+    "message": "分类",
+    "description": "Category label"
+  },
+  "label_priority": {
+    "message": "优先级",
+    "description": "Priority label"
+  },
+  "label_estimated_time": {
+    "message": "预估时间（分钟）",
+    "description": "Estimated time label"
+  },
+  "placeholder_estimated_time": {
+    "message": "例如：60",
+    "description": "Estimated time placeholder"
+  },
+
+  "btn_cancel": {
+    "message": "取消",
+    "description": "Cancel button"
+  },
+  "btn_save": {
+    "message": "保存",
+    "description": "Save button"
+  },
+
+  "action_start_focus": {
+    "message": "开始专注",
+    "description": "Start focus action"
+  },
+  "action_edit": {
+    "message": "编辑",
+    "description": "Edit action"
+  },
+  "action_pin": {
+    "message": "置顶",
+    "description": "Pin action"
+  },
+  "action_unpin": {
+    "message": "取消置顶",
+    "description": "Unpin action"
+  },
+  "action_delete": {
+    "message": "删除",
+    "description": "Delete action"
+  },
+
+  "confirm_delete_task": {
+    "message": "确定要删除这个任务吗？",
+    "description": "Delete task confirmation"
+  },
+
+  "achievements_title": {
+    "message": "成就系统",
+    "description": "Achievements page title"
+  },
+  "achievements_unlocked": {
+    "message": "已解锁成就",
+    "description": "Unlocked achievements label"
+  },
+  "achievements_total_hours": {
+    "message": "总专注时长（小时）",
+    "description": "Total focus hours label"
+  },
+  "achievements_streak": {
+    "message": "连续天数",
+    "description": "Achievement streak label"
+  },
+  "achievements_my_achievements": {
+    "message": "我的成就",
+    "description": "My achievements section"
+  },
+  "achievements_recent_unlocks": {
+    "message": "最近解锁",
+    "description": "Recent unlocks section"
+  },
+  "achievements_unlocked_badge": {
+    "message": "已解锁",
+    "description": "Unlocked badge text"
+  },
+
+  "ach_first_pomodoro_name": { "message": "初出茅庐" },
+  "ach_first_pomodoro_desc": { "message": "完成第一个番茄钟" },
+  "ach_daily_goal_name": { "message": "日新月异" },
+  "ach_daily_goal_desc": { "message": "达成每日目标（120分钟）" },
+  "ach_week_goal_name": { "message": "持之以恒" },
+  "ach_week_goal_desc": { "message": "达成每周目标（720分钟）" },
+  "ach_streak_3_name": { "message": "三连胜" },
+  "ach_streak_3_desc": { "message": "连续3天达成目标" },
+  "ach_streak_7_name": { "message": "七日炼金" },
+  "ach_streak_7_desc": { "message": "连续7天达成目标" },
+  "ach_streak_30_name": { "message": "月度大师" },
+  "ach_streak_30_desc": { "message": "连续30天达成目标" },
+  "ach_focus_100_name": { "message": "百炼成钢" },
+  "ach_focus_100_desc": { "message": "累计专注100小时" },
+  "ach_focus_500_name": { "message": "专注宗师" },
+  "ach_focus_500_desc": { "message": "累计专注500小时" },
+  "ach_early_bird_name": { "message": "早起鸟" },
+  "ach_early_bird_desc": { "message": "8点前完成一个番茄钟" },
+  "ach_night_owl_name": { "message": "夜猫子" },
+  "ach_night_owl_desc": { "message": "22点后完成一个番茄钟" },
+  "ach_speed_demon_name": { "message": "速度恶魔" },
+  "ach_speed_demon_desc": { "message": "单日完成8个番茄钟" },
+  "ach_marathon_name": { "message": "马拉松" },
+  "ach_marathon_desc": { "message": "单日专注4小时以上" },
+  "ach_perfectionist_name": { "message": "完美主义者" },
+  "ach_perfectionist_desc": { "message": "连续完成7个番茄钟" },
+
+  "notification_achievement_unlocked": {
+    "message": "成就解锁！",
+    "description": "Achievement unlocked notification title"
+  },
+  "notification_pomodoro": {
+    "message": "番茄钟",
+    "description": "Pomodoro notification title"
+  },
+  "notification_focus_complete": {
+    "message": "专注时间结束，休息一下吧！",
+    "description": "Focus complete message"
+  },
+  "notification_focus_complete_long": {
+    "message": "本轮专注完成，进入长休息时间。",
+    "description": "Focus complete with long break message"
+  },
+  "notification_break_complete": {
+    "message": "休息结束，开始下一轮专注。",
+    "description": "Break complete message"
+  },
+
+  "alarm_title": {
+    "message": "时间到了！",
+    "description": "Alarm page title"
+  },
+  "alarm_focus_complete": {
+    "message": "专注时间结束，休息一下吧",
+    "description": "Focus complete subtitle"
+  },
+  "alarm_break_complete": {
+    "message": "休息结束，准备进入下一轮",
+    "description": "Break complete subtitle"
+  },
+  "alarm_phase_ended": {
+    "message": "当前阶段已结束",
+    "description": "Phase ended message"
+  },
+  "alarm_next_step": {
+    "message": "下一步",
+    "description": "Next step label"
+  },
+  "alarm_start_directly": {
+    "message": "你可以直接开始新的专注。",
+    "description": "Start directly message"
+  },
+  "alarm_next_phase_suggestion": {
+    "message": "你刚完成了一段{0}，下一阶段建议进入{1}。",
+    "description": "Next phase suggestion with placeholders"
+  },
+  "alarm_break_complete_suggestion": {
+    "message": "休息完成，建议进入下一轮专注。",
+    "description": "Break complete suggestion"
+  },
+  "alarm_auto_continue": {
+    "message": "你已开启自动连续，下一阶段已经在进行中。",
+    "description": "Auto continue message"
+  },
+  "btn_start_next_phase": {
+    "message": "开始下一阶段",
+    "description": "Start next phase button"
+  },
+  "btn_start_focus": {
+    "message": "开始专注",
+    "description": "Start focus button"
+  },
+  "btn_start_phase": {
+    "message": "开始{0}",
+    "description": "Start phase button with placeholder"
+  },
+  "btn_extend_5min": {
+    "message": "延长 5 分钟",
+    "description": "Extend 5 minutes button"
+  },
+  "btn_skip_break": {
+    "message": "跳过休息，直接专注",
+    "description": "Skip break button"
+  },
+  "btn_got_it": {
+    "message": "知道了",
+    "description": "Got it button"
+  },
+
+  "quote_1": { "message": "休息是为了走更远的路" },
+  "quote_2": { "message": "专注是成功的关键" },
+  "quote_3": { "message": "一寸光阴一寸金" },
+  "quote_4": { "message": "成功就是每天进步一点点" },
+  "quote_5": { "message": "时间就像海绵里的水，只要愿挤，总还是有的" },
+  "quote_author_5": { "message": "鲁迅" },
+  "quote_6": { "message": "业精于勤，荒于嬉" },
+  "quote_author_6": { "message": "韩愈" },
+  "quote_7": { "message": "千里之行，始于足下" },
+  "quote_author_7": { "message": "老子" },
+  "quote_8": { "message": "不积跬步，无以至千里" },
+  "quote_author_8": { "message": "荀子" },
+  "quote_author_anon": { "message": "佚名" },
+
+  "blocked_title": {
+    "message": "专注模式中",
+    "description": "Blocked page title"
+  },
+  "blocked_message": {
+    "message": "此网站已被暂时阻止，请专注于当前任务。",
+    "description": "Blocked page message"
+  },
+  "blocked_current_site": {
+    "message": "当前网站",
+    "description": "Current site label"
+  },
+  "blocked_unknown_site": {
+    "message": "未知网站",
+    "description": "Unknown site text"
+  },
+  "blocked_not_focusing": {
+    "message": "未在专注中",
+    "description": "Not focusing status"
+  },
+  "btn_temp_access": {
+    "message": "临时访问 5 分钟",
+    "description": "Temporary access button"
+  },
+  "btn_end_focus_access": {
+    "message": "结束专注，允许访问",
+    "description": "End focus and allow access button"
+  },
+
+  "menu_toggle": {
+    "message": "番茄钟：开始/暂停",
+    "description": "Context menu toggle"
+  },
+  "menu_reset": {
+    "message": "番茄钟：重置",
+    "description": "Context menu reset"
+  },
+
+  "error_start_timer": { "message": "开始计时失败:" },
+  "error_pause_timer": { "message": "暂停计时失败:" },
+  "error_reset_timer": { "message": "重置计时失败:" },
+  "error_load_state": { "message": "加载状态失败:" },
+  "error_save_settings": { "message": "保存设置失败:" },
+  "error_load_settings": { "message": "加载设置失败:" },
+  "error_load_stats": { "message": "加载统计数据失败:" },
+  "error_load_tasks": { "message": "加载任务失败:" },
+  "error_load_achievements": { "message": "加载成就数据失败:" },
+  "error_init_alarm": { "message": "初始化提醒页失败:" },
+  "error_start_next": { "message": "开始下一阶段失败:" },
+  "error_extend": { "message": "延长失败:" },
+  "error_skip_break": { "message": "跳过休息失败:" },
+  "error_check_achievements": { "message": "检查成就失败:" },
+  "error_init": { "message": "番茄钟初始化失败:" },
+  "error_startup": { "message": "番茄钟启动恢复失败:" },
+  "error_timer_complete": { "message": "处理计时完成失败:" },
+  "error_shortcut_toggle": { "message": "快捷键开始/暂停失败:" },
+  "error_shortcut_reset": { "message": "快捷键重置失败:" },
+  "error_menu_toggle": { "message": "菜单开始/暂停失败:" },
+  "error_menu_reset": { "message": "菜单重置失败:" }
+}

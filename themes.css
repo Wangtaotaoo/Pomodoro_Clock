@@ -1,0 +1,105 @@
+/* iOS 16 Glassmorphism Theme */
+
+/* Light Theme */
+:root {
+  --bg-primary: rgba(255, 255, 255, 0.72);
+  --bg-secondary: rgba(242, 242, 247, 0.8);
+  --bg-card: rgba(255, 255, 255, 0.75);
+  --bg-input: rgba(255, 255, 255, 0.9);
+  --bg-glass: rgba(255, 255, 255, 0.6);
+  --text-primary: #1c1c1e;
+  --text-secondary: #8e8e93;
+  --text-muted: #c7c7cc;
+  --border-color: rgba(0, 0, 0, 0.08);
+  --border-glass: rgba(255, 255, 255, 0.5);
+  --accent-color: #007aff;
+  --accent-light: rgba(0, 122, 255, 0.1);
+  --accent-gradient: linear-gradient(135deg, #007aff, #5856d6);
+  --success-color: #34c759;
+  --warning-color: #ff9500;
+  --error-color: #ff3b30;
+  --shadow-sm: 0 2px 8px rgba(0, 0, 0, 0.04), 0 1px 2px rgba(0, 0, 0, 0.06);
+  --shadow-md: 0 8px 24px rgba(0, 0, 0, 0.08), 0 4px 12px rgba(0, 0, 0, 0.04);
+  --shadow-lg: 0 20px 48px rgba(0, 0, 0, 0.12), 0 8px 24px rgba(0, 0, 0, 0.06);
+  --shadow-glass: 0 8px 32px rgba(0, 0, 0, 0.08), inset 0 1px 0 rgba(255, 255, 255, 0.8);
+  --focus-ring: rgba(0, 122, 255, 0.2);
+  --blur-amount: 20px;
+  --gradient-bg: linear-gradient(135deg, #f5f7fa 0%, #e4e8ec 50%, #f0f4f8 100%);
+}
+
+/* Dark Theme */
+[data-theme="dark"] {
+  --bg-primary: rgba(28, 28, 30, 0.72);
+  --bg-secondary: rgba(44, 44, 46, 0.8);
+  --bg-card: rgba(28, 28, 30, 0.75);
+  --bg-input: rgba(44, 44, 46, 0.9);
+  --bg-glass: rgba(28, 28, 30, 0.6);
+  --text-primary: #ffffff;
+  --text-secondary: #98989d;
+  --text-muted: #636366;
+  --border-color: rgba(255, 255, 255, 0.08);
+  --border-glass: rgba(255, 255, 255, 0.1);
+  --accent-color: #0a84ff;
+  --accent-light: rgba(10, 132, 255, 0.15);
+  --accent-gradient: linear-gradient(135deg, #0a84ff, #5e5ce6);
+  --success-color: #30d158;
+  --warning-color: #ff9f0a;
+  --error-color: #ff453a;
+  --shadow-sm: 0 2px 8px rgba(0, 0, 0, 0.2), 0 1px 2px rgba(0, 0, 0, 0.3);
+  --shadow-md: 0 8px 24px rgba(0, 0, 0, 0.3), 0 4px 12px rgba(0, 0, 0, 0.2);
+  --shadow-lg: 0 20px 48px rgba(0, 0, 0, 0.4), 0 8px 24px rgba(0, 0, 0, 0.3);
+  --shadow-glass: 0 8px 32px rgba(0, 0, 0, 0.4), inset 0 1px 0 rgba(255, 255, 255, 0.1);
+  --focus-ring: rgba(10, 132, 255, 0.3);
+  --gradient-bg: linear-gradient(135deg, #1c1c1e 0%, #2c2c2e 50%, #1c1c1e 100%);
+}
+
+/* Auto Theme - Follows system preference */
+@media (prefers-color-scheme: dark) {
+  [data-theme="auto"] {
+    --bg-primary: rgba(28, 28, 30, 0.72);
+    --bg-secondary: rgba(44, 44, 46, 0.8);
+    --bg-card: rgba(28, 28, 30, 0.75);
+    --bg-input: rgba(44, 44, 46, 0.9);
+    --bg-glass: rgba(28, 28, 30, 0.6);
+    --text-primary: #ffffff;
+    --text-secondary: #98989d;
+    --text-muted: #636366;
+    --border-color: rgba(255, 255, 255, 0.08);
+    --border-glass: rgba(255, 255, 255, 0.1);
+    --accent-color: #0a84ff;
+    --accent-light: rgba(10, 132, 255, 0.15);
+    --accent-gradient: linear-gradient(135deg, #0a84ff, #5e5ce6);
+    --success-color: #30d158;
+    --warning-color: #ff9f0a;
+    --error-color: #ff453a;
+    --shadow-sm: 0 2px 8px rgba(0, 0, 0, 0.2), 0 1px 2px rgba(0, 0, 0, 0.3);
+    --shadow-md: 0 8px 24px rgba(0, 0, 0, 0.3), 0 4px 12px rgba(0, 0, 0, 0.2);
+    --shadow-lg: 0 20px 48px rgba(0, 0, 0, 0.4), 0 8px 24px rgba(0, 0, 0, 0.3);
+    --shadow-glass: 0 8px 32px rgba(0, 0, 0, 0.4), inset 0 1px 0 rgba(255, 255, 255, 0.1);
+    --focus-ring: rgba(10, 132, 255, 0.3);
+    --gradient-bg: linear-gradient(135deg, #1c1c1e 0%, #2c2c2e 50%, #1c1c1e 100%);
+  }
+}
+
+/* Glassmorphism base class */
+.glass {
+  background: var(--bg-glass);
+  backdrop-filter: blur(var(--blur-amount)) saturate(180%);
+  -webkit-backdrop-filter: blur(var(--blur-amount)) saturate(180%);
+  border: 1px solid var(--border-glass);
+  box-shadow: var(--shadow-glass);
+}
+
+.glass-card {
+  background: var(--bg-card);
+  backdrop-filter: blur(var(--blur-amount)) saturate(180%);
+  -webkit-backdrop-filter: blur(var(--blur-amount)) saturate(180%);
+  border: 1px solid var(--border-color);
+  box-shadow: var(--shadow-md);
+}
+
+/* iOS-style blur overlay */
+.ios-blur {
+  backdrop-filter: blur(40px) saturate(180%);
+  -webkit-backdrop-filter: blur(40px) saturate(180%);
+}
