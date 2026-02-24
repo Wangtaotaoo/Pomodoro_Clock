@@ -68,6 +68,10 @@ label {
   letter-spacing: -0.2px;
 }
 
+label span {
+  color: var(--text-secondary);
+}
+
 input[type="number"] {
   border: none;
   border-radius: 14px;

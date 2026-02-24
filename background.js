@@ -249,7 +249,8 @@ async function ensureInitialized() {
 
 async function handleTimerCompletion() {
   const { settings, timerState, history } = await getStorage(['settings', 'timerState', 'history']);
-  const mergedSettings = mergeSettings(settings);
+  const { settings: syncSettings } = await getSyncStorage(['settings']);
+  const mergedSettings = mergeSettings(settings || syncSettings);
   const state = timerState || getDefaultTimerState(mergedSettings);
 
   if (!state.isRunning || state.isPaused) {
@@ -535,7 +536,8 @@ function checkPerfectionist(history) {
 
 async function toggleStartPause() {
   const { settings, timerState } = await getStorage(['settings', 'timerState']);
-  const mergedSettings = mergeSettings(settings);
+  const { settings: syncSettings } = await getSyncStorage(['settings']);
+  const mergedSettings = mergeSettings(settings || syncSettings);
   const current = timerState || getDefaultTimerState(mergedSettings);
 
   if (current.isRunning && !current.isPaused) {
@@ -570,7 +572,8 @@ async function toggleStartPause() {
 
 async function resetTimerState() {
   const { settings } = await getStorage(['settings']);
-  const mergedSettings = mergeSettings(settings);
+  const { settings: syncSettings } = await getSyncStorage(['settings']);
+  const mergedSettings = mergeSettings(settings || syncSettings);
   const totalSeconds = getPhaseDurationSeconds('focus', mergedSettings);
 
   await clearTimerAlarm();

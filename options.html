@@ -39,10 +39,22 @@
     <section class="card">
       <h2 data-i18n="options_duration_settings">时长设置</h2>
       <div class="grid">
-        <label data-i18n="options_focus_minutes">专注时长（分钟）<input id="focusMinutes" type="number" min="1" max="180"></label>
-        <label data-i18n="options_short_break">短休息（分钟）<input id="shortBreakMinutes" type="number" min="1" max="60"></label>
-        <label data-i18n="options_long_break">长休息（分钟）<input id="longBreakMinutes" type="number" min="1" max="90"></label>
-        <label data-i18n="options_long_break_interval">每几轮一次长休息<input id="longBreakInterval" type="number" min="2" max="8"></label>
+        <label>
+          <span data-i18n="options_focus_minutes">专注时长（分钟）</span>
+          <input id="focusMinutes" type="number" min="1" max="180">
+        </label>
+        <label>
+          <span data-i18n="options_short_break">短休息（分钟）</span>
+          <input id="shortBreakMinutes" type="number" min="1" max="60">
+        </label>
+        <label>
+          <span data-i18n="options_long_break">长休息（分钟）</span>
+          <input id="longBreakMinutes" type="number" min="1" max="90">
+        </label>
+        <label>
+          <span data-i18n="options_long_break_interval">每几轮一次长休息</span>
+          <input id="longBreakInterval" type="number" min="2" max="8">
+        </label>
       </div>
     </section>
 
@@ -57,7 +69,8 @@
     <section class="card">
       <h2 data-i18n="options_site_blocking">网站阻止</h2>
       <label class="check"><input id="blockSitesEnabled" type="checkbox"><span data-i18n="options_block_sites_enabled">专注期间阻止干扰网站</span></label>
-      <label style="margin-top: 12px;" data-i18n="options_blocked_sites_label">阻止的网站（每行一个，支持通配符 *.example.com）
+      <label style="margin-top: 12px;">
+        <span data-i18n="options_blocked_sites_label">阻止的网站（每行一个，支持通配符 *.example.com）</span>
         <textarea id="blockedSites" rows="5" data-i18n-placeholder="options_blocked_sites_placeholder"></textarea>
       </label>
       <p class="hint" data-i18n="options_blocked_sites_hint">网站阻止需要配合Chrome扩展使用，请在扩展选项中设置内容脚本权限</p>

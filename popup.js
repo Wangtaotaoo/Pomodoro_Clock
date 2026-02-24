@@ -60,6 +60,10 @@ function getStorage(keys) {
   return new Promise((resolve) => chrome.storage.local.get(keys, resolve));
 }
 
+function getSyncStorage(keys) {
+  return new Promise((resolve) => chrome.storage.sync.get(keys, resolve));
+}
+
 function setStorage(data) {
   return new Promise((resolve) => chrome.storage.local.set(data, resolve));
 }
@@ -294,7 +298,10 @@ async function saveTimerState(nextState) {
 
 async function loadState() {
   const result = await getStorage(['settings', 'timerState', 'history']);
-  settings = mergeSettings(result.settings);
+  const syncResult = await getSyncStorage(['settings']);
+
+  // Merge settings: local > sync > defaults
+  settings = mergeSettings(result.settings || syncResult.settings);
   history = Array.isArray(result.history) ? result.history : [];
   timerState = result.timerState || getDefaultTimerState();
 
@@ -324,6 +331,11 @@ async function startTimer() {
     return;
   }
 
+  // Re-read settings from storage to ensure we have the latest values
+  const result = await getStorage(['settings']);
+  const syncResult = await getSyncStorage(['settings']);
+  settings = mergeSettings(result.settings || syncResult.settings);
+
   const nextState = { ...timerState };
 
   if (nextState.phase === 'focus' && !nextState.isPaused) {
@@ -333,8 +345,8 @@ async function startTimer() {
     const newDuration = mins * 60;
     nextState.totalSeconds = newDuration;
     nextState.remainingSeconds = newDuration;
-    settings.focusMinutes = mins;
-    await setStorage({ settings });
+    // Note: We don't save focusMinutes to settings here anymore
+    // The input field is for one-time customization only
   }
 
   if (nextState.phase === 'focus') {
@@ -376,6 +388,11 @@ async function resetTimer() {
 
   await clearTimerAlarm();
 
+  // Re-read settings from storage to ensure we have the latest values
+  const result = await getStorage(['settings']);
+  const syncResult = await getSyncStorage(['settings']);
+  settings = mergeSettings(result.settings || syncResult.settings);
+
   const totalSeconds = getPhaseDurationSeconds('focus');
   const nextState = {
     ...timerState,
@@ -388,6 +405,10 @@ async function resetTimer() {
     completedFocusCount: 0,
     currentTask: ''
   };
+
+  // Update input field to reflect the setting
+  minutesInput.value = Math.max(1, Math.floor(totalSeconds / 60));
+  updateQuickButtons(minutesInput.value);
 
   await saveTimerState(nextState);
 }
@@ -471,16 +492,32 @@ taskInput.addEventListener('change', async () => {
 });
 
 chrome.storage.onChanged.addListener((changes, areaName) => {
-  if (areaName !== 'local') return;
-
-  if (changes.settings) {
-    settings = mergeSettings(changes.settings.newValue);
-  }
-  if (changes.timerState) {
-    timerState = changes.timerState.newValue;
-  }
-  if (changes.history) {
-    history = Array.isArray(changes.history.newValue) ? changes.history.newValue : [];
+  // Listen to both local and sync storage changes
+  if (areaName === 'local') {
+    if (changes.settings) {
+      settings = mergeSettings(changes.settings.newValue);
+      // Update input field when settings change
+      if (timerState && timerState.phase === 'focus' && !timerState.isRunning && !timerState.isPaused) {
+        minutesInput.value = settings.focusMinutes;
+        updateQuickButtons(settings.focusMinutes);
+      }
+    }
+    if (changes.timerState) {
+      timerState = changes.timerState.newValue;
+    }
+    if (changes.history) {
+      history = Array.isArray(changes.history.newValue) ? changes.history.newValue : [];
+    }
+  } else if (areaName === 'sync') {
+    // Also listen to sync changes (from options page)
+    if (changes.settings) {
+      settings = mergeSettings(changes.settings.newValue);
+      // Update input field when settings change
+      if (timerState && timerState.phase === 'focus' && !timerState.isRunning && !timerState.isPaused) {
+        minutesInput.value = settings.focusMinutes;
+        updateQuickButtons(settings.focusMinutes);
+      }
+    }
   }
 
   render();

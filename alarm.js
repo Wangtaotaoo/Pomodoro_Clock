@@ -44,6 +44,10 @@ function getStorage(keys) {
   return new Promise((resolve) => chrome.storage.local.get(keys, resolve));
 }
 
+function getSyncStorage(keys) {
+  return new Promise((resolve) => chrome.storage.sync.get(keys, resolve));
+}
+
 function setStorage(data) {
   return new Promise((resolve) => chrome.storage.local.set(data, resolve));
 }
@@ -149,6 +153,11 @@ async function handleExtend() {
 }
 
 async function handleSkipBreak() {
+  // Re-read settings to ensure we have the latest values
+  const result = await getStorage(['settings']);
+  const syncResult = await getSyncStorage(['settings']);
+  settings = mergeSettings(result.settings || syncResult.settings);
+
   await startPhase('focus', getPhaseDurationSeconds('focus'), '');
   window.close();
 }
@@ -183,7 +192,10 @@ function playAlarmSound() {
 
 async function initialize() {
   const result = await getStorage(['settings', 'timerState', 'lastCompletion']);
-  settings = mergeSettings(result.settings);
+  const syncResult = await getSyncStorage(['settings']);
+
+  // Merge settings: local > sync > defaults
+  settings = mergeSettings(result.settings || syncResult.settings);
   timerState = result.timerState || null;
   lastCompletion = result.lastCompletion || null;
 

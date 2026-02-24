@@ -39,6 +39,10 @@ function getStorage(keys) {
   return new Promise((resolve) => chrome.storage.local.get(keys, resolve));
 }
 
+function getSyncStorage(keys) {
+  return new Promise((resolve) => chrome.storage.sync.get(keys, resolve));
+}
+
 function setStorage(data) {
   return new Promise((resolve) => chrome.storage.local.set(data, resolve));
 }
@@ -156,7 +160,8 @@ async function startFocus(taskId) {
 
   // Update timer state in background
   const result = await getStorage(['timerState', 'settings']);
-  const settings = mergeSettings(result.settings);
+  const syncResult = await getSyncStorage(['settings']);
+  const settings = mergeSettings(result.settings || syncResult.settings);
   const currentTimerState = result.timerState;
 
   const timerState = {
